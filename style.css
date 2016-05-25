@@ -1070,8 +1070,15 @@ border-top: 16px solid #4083ae;
 .title-area {
 	float: left;
 	padding: 10px 0;
+  position: relative;
   text-align: center;
 	width: 50%;
+  z-index: 99;
+}
+
+.widget_search {
+  position: relative;
+  z-index: 99;
 }
 
 .header-image .title-area {
