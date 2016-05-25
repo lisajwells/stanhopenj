@@ -1043,21 +1043,22 @@ img.alignright,
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
-.site-header {
+/*.site-header {
 	background-color: #fff;
 }
-
+*/
 .site-header > .wrap {
 	padding: 20px 0;
 }
 
 .site-header {
-background: url("images/page-header.jpg") no-repeat scroll 0 0 transparent;
+background: url("images/page-header.jpg") no-repeat scroll 0 0;
 height: 190px;
+border-top: 16px solid #4083ae;
 }
 
 .home .site-header {
-background: url("images/home-header.jpg") no-repeat scroll 0 0 transparent;
+background: url("images/home-header.jpg") no-repeat scroll 0 0;
 height: 290px;
 }
 
@@ -1067,7 +1068,7 @@ height: 290px;
 .title-area {
 	float: left;
 	padding: 10px 0;
-	width: 300px;
+	width: 50%;
 }
 
 .header-image .title-area {
@@ -1082,16 +1083,17 @@ height: 290px;
 }
 
 .site-title {
-	font-size: 30px;
-	font-size: 3rem;
-	font-weight: 700;
+  font-family: 'Lora', serif;
+  font-size: 46px;
+	font-size: 4.6rem;
+	font-weight: 400;
 	line-height: 1.2;
 }
 
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
-	color: #1b154b;
+	color: #fff;
 	text-decoration: none;
 }
 
