@@ -77,45 +77,83 @@ add_filter( 'genesis_search_text', 'stanhopnj_search_button_text' );
 
 // Add Gradient over header image for readability
 //remove initial header functions
-remove_action( 'genesis_header', 'genesis_do_header' );
+// remove_action( 'genesis_header', 'genesis_do_header' );
 //add in the new header markup
-add_action( 'genesis_header', 'stanhopenj_genesis_do_header' );
-function stanhopenj_genesis_do_header() {
-	global $wp_registered_sidebars;
+
+// add_action( 'genesis_header', 'stanhopenj_genesis_do_header' );
+// function stanhopenj_genesis_do_header() {
+// 	global $wp_registered_sidebars;
+
+// 		if ( is_home_page ) {
+// 			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>';
+// 		} else {
+// 			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>';
+// 		}
+
+// 	genesis_markup( array(
+// 		'html5'   => '<div %s>',
+// 		'xhtml'   => '<div id="title-area">',
+// 		'context' => 'title-area',
+// 	) );
+
+// 	do_action( 'genesis_site_title' );
+// 	do_action( 'genesis_site_description' );
+// 	echo '</div>';
+
+// 	if ( ( isset( $wp_registered_sidebars['header-right'] ) && is_active_sidebar( 'header-right' ) ) || has_action( 'genesis_header_right' ) ) {
+
+// 		genesis_markup( array(
+// 			'html5'   => '<div %s>' . genesis_sidebar_title( 'header-right' ),
+// 			'xhtml'   => '<div class="widget-area header-widget-area">',
+// 			'context' => 'header-widget-area',
+// 		) );
+// 			do_action( 'genesis_header_right' );
+// 			add_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
+// 			add_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
+// 			dynamic_sidebar( 'header-right' );
+// 			remove_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
+// 			remove_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
+
+// 		echo '</div>';
+
+// 	}
+// }
+
+remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
+add_action( 'genesis_header', 'stanhopenj_header_markup_open', 5 );
+/**
+ * Echo the opening structural markup for the header.
+ *
+ * @since 1.2.0
+ *
+ * @uses genesis_markup()          Apply contextual markup.
+ * @uses genesis_structural_wrap() Maybe add opening .wrap div tag with header context.
+ */
+function stanhopenj_header_markup_open() {
+
+	if ( is_front_page() ) {
 
 	genesis_markup( array(
-		'html5'   => '<div %s>',
-		'xhtml'   => '<div id="title-area">',
-		'context' => 'title-area',
+		'html5'   => '<div class="site-header-border"></div><header %s><div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>',
+		'xhtml'   => '<div id="header">',
+		'context' => 'site-header',
 	) );
-	do_action( 'genesis_site_title' );
-	do_action( 'genesis_site_description' );
-	echo '</div>';
 
-	if ( ( isset( $wp_registered_sidebars['header-right'] ) && is_active_sidebar( 'header-right' ) ) || has_action( 'genesis_header_right' ) ) {
+	} else {
 
-		genesis_markup( array(
-			'html5'   => '<div %s>' . genesis_sidebar_title( 'header-right' ),
-			'xhtml'   => '<div class="widget-area header-widget-area">',
-			'context' => 'header-widget-area',
-		) );
-		if ( is_home_page ) {
-			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>';
-		} else {
-			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>';
-		}
-			do_action( 'genesis_header_right' );
-			add_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
-			add_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
-			dynamic_sidebar( 'header-right' );
-			remove_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
-			remove_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
+	genesis_markup( array(
+		'html5'   => '<div class="site-header-border"></div><header %s><div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>',
+		'xhtml'   => '<div id="header">',
+		'context' => 'site-header',
+	) );
 
-		echo '</div>';
 
 	}
-}
 
+
+	genesis_structural_wrap( 'header' );
+
+}
 
 
 

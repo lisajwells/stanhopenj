@@ -310,6 +310,7 @@ video,
 }
 
 img {
+  display: block;
 	height: auto;
 }
 
@@ -1053,9 +1054,15 @@ img.alignright,
 }
 
 .site-header {
-background: url("images/page-header.jpg") no-repeat scroll 0 0;
-height: 190px;
-border-top: 16px solid #4083ae;
+  background: url("images/page-header.jpg") no-repeat scroll 0 0;
+  height: 190px;
+  position: relative; /* for absolute gradient div */
+}
+
+.site-header-border {
+    border-top: 16px solid #4083ae;
+    position: relative;
+    z-index: 2000;
 }
 
 .home .site-header {
@@ -1088,9 +1095,13 @@ border-top: 16px solid #4083ae;
 }
 
 .header-ghost {
-  width: 200px;
-  height: 200px;
-  background-color: pink;
+  width: 100%;
+  height: auto;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.6+0,0+50,0+50 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
   position: absolute;
   top: 0;
   left: 0;
