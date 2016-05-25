@@ -19,6 +19,7 @@ navy: #1b154b
 darkblue: #2f2f82
 lime: #91ae3d
 skyblue: #4083ae
+lightskyblue: #8dbbc9;
 
 font-family: 'Lato', sans-serif;  normal 400 and bold 700
 font-family: 'Lora', serif;       normal 400 and bold 700
@@ -1068,6 +1069,7 @@ height: 290px;
 .title-area {
 	float: left;
 	padding: 10px 0;
+  text-align: center;
 	width: 50%;
 }
 
@@ -1106,6 +1108,7 @@ height: 290px;
 }
 
 .site-description {
+  color: #8dbbc9;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -1118,7 +1121,8 @@ height: 290px;
 }
 
 .site-description {
-  display: none;
+  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .header-image .site-description,
