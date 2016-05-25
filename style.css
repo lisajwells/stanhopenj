@@ -570,6 +570,11 @@ th:first-child {
 /* ## Site Containers
 --------------------------------------------- */
 
+.site-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .site-inner,
 .wrap {
 	margin: 0 auto;
