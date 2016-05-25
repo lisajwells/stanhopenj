@@ -783,8 +783,9 @@ th:first-child {
 }
 
 .site-header .search-form {
-	float: right;
-	margin: 12px auto 0;
+    float: right;
+    margin: 0 3em 0;
+    width: 100%;
 }
 
 .post-password-form input[type="submit"],
@@ -1075,12 +1076,14 @@ img.alignright,
 --------------------------------------------- */
 
 .title-area {
-	float: left;
-	padding: 10px 0;
-  position: relative;
-  text-align: center;
-	width: 50%;
-  z-index: 99;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 40%;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .widget_search {
@@ -1163,11 +1166,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', e
 --------------------------------------------- */
 
 .site-header .widget-area {
-	float: right;
-	text-align: right;
-	width: 800px;
+    float: right;
+    text-align: right;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
 
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
