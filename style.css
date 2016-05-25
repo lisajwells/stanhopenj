@@ -1114,7 +1114,11 @@ height: 290px;
 
 .site-description,
 .site-title {
-	margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.site-description {
+  display: none;
 }
 
 .header-image .site-description,

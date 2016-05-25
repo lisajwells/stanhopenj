@@ -69,6 +69,13 @@ add_theme_support( 'genesis-responsive-viewport' );
 // 	'flex-height'     => true,
 // ) );
 
+// Change placeholder search form text
+
+function stanhopnj_search_button_text( $text ) {
+	return ( 'I\'m looking for...');
+}
+add_filter( 'genesis_search_text', 'stanhopnj_search_button_text' );
+
 //* Add support for custom background
 add_theme_support( 'custom-background' );
 
