@@ -70,11 +70,54 @@ add_theme_support( 'genesis-responsive-viewport' );
 // ) );
 
 // Change placeholder search form text
-
 function stanhopnj_search_button_text( $text ) {
 	return ( 'I\'m looking for...');
 }
 add_filter( 'genesis_search_text', 'stanhopnj_search_button_text' );
+
+// Add Gradient over header image for readability
+//remove initial header functions
+remove_action( 'genesis_header', 'genesis_do_header' );
+//add in the new header markup
+add_action( 'genesis_header', 'stanhopenj_genesis_do_header' );
+function stanhopenj_genesis_do_header() {
+	global $wp_registered_sidebars;
+
+	genesis_markup( array(
+		'html5'   => '<div %s>',
+		'xhtml'   => '<div id="title-area">',
+		'context' => 'title-area',
+	) );
+	do_action( 'genesis_site_title' );
+	do_action( 'genesis_site_description' );
+	echo '</div>';
+
+	if ( ( isset( $wp_registered_sidebars['header-right'] ) && is_active_sidebar( 'header-right' ) ) || has_action( 'genesis_header_right' ) ) {
+
+		genesis_markup( array(
+			'html5'   => '<div %s>' . genesis_sidebar_title( 'header-right' ),
+			'xhtml'   => '<div class="widget-area header-widget-area">',
+			'context' => 'header-widget-area',
+		) );
+		if ( is_home_page ) {
+			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>';
+		} else {
+			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>';
+		}
+			do_action( 'genesis_header_right' );
+			add_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
+			add_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
+			dynamic_sidebar( 'header-right' );
+			remove_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
+			remove_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
+
+		echo '</div>';
+
+	}
+}
+
+
+
 
 //* Add support for custom background
 add_theme_support( 'custom-background' );

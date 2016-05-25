@@ -1059,8 +1059,9 @@ border-top: 16px solid #4083ae;
 }
 
 .home .site-header {
-background: url("images/home-header.jpg") no-repeat scroll 0 0;
-height: 290px;
+  background: url("images/home-header.jpg") no-repeat scroll 0 0;
+  height: 290px;
+  position: relative; /* for absolute gradient div */
 }
 
 /* ## Title Area
@@ -1077,6 +1078,15 @@ height: 290px;
 	margin: 0 auto;
 	max-width: 300px;
 	padding: 0;
+}
+
+.header-ghost {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header-full-width .title-area {
