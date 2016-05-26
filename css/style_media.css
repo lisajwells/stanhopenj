@@ -176,9 +176,7 @@
   .sidebar-primary,
   .sidebar-secondary,
   .sidebar-sidebar-content .content,
-  .sidebar-sidebar-content .content-sidebar-wrap,
-  /*.site-header .widget-area,*/
-  /*.title-area*/ {
+  .sidebar-sidebar-content .content-sidebar-wrap {
     width: 100%;
   }
 
@@ -424,6 +422,9 @@
     right: 0;
     width: 262px;
     float: none;
+}
+  .home .site-header .widget-area {
+    bottom: -165px;
 }
 
 
