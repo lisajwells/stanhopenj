@@ -37,6 +37,7 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'stanhopenj-fonts', '//fonts.googleapis.com/css?family=Lora:400,700|Lato:400,700);', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'stanhopenj-uber-css', get_stylesheet_directory_uri() . '/css/style_uber.css' );
 	wp_enqueue_style( 'stanhopenj-media-css', get_stylesheet_directory_uri() . '/css/style_media.css' );
 	wp_enqueue_style( 'stanhopenj-print-css', get_stylesheet_directory_uri() . '/css/style_print.css' );
 
@@ -70,92 +71,48 @@ add_theme_support( 'genesis-responsive-viewport' );
 // ) );
 
 // Change placeholder search form text
-function stanhopnj_search_button_text( $text ) {
-	return ( 'I\'m looking for...');
-}
 add_filter( 'genesis_search_text', 'stanhopnj_search_button_text' );
+function stanhopnj_search_button_text( $text ) {
+    return "I'm looking for...";
+}
 
 // Add Gradient over header image for readability
-//remove initial header functions
-// remove_action( 'genesis_header', 'genesis_do_header' );
-//add in the new header markup
-
-// add_action( 'genesis_header', 'stanhopenj_genesis_do_header' );
-// function stanhopenj_genesis_do_header() {
-// 	global $wp_registered_sidebars;
-
-// 		if ( is_home_page ) {
-// 			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>';
-// 		} else {
-// 			echo '<div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>';
-// 		}
-
-// 	genesis_markup( array(
-// 		'html5'   => '<div %s>',
-// 		'xhtml'   => '<div id="title-area">',
-// 		'context' => 'title-area',
-// 	) );
-
-// 	do_action( 'genesis_site_title' );
-// 	do_action( 'genesis_site_description' );
-// 	echo '</div>';
-
-// 	if ( ( isset( $wp_registered_sidebars['header-right'] ) && is_active_sidebar( 'header-right' ) ) || has_action( 'genesis_header_right' ) ) {
-
-// 		genesis_markup( array(
-// 			'html5'   => '<div %s>' . genesis_sidebar_title( 'header-right' ),
-// 			'xhtml'   => '<div class="widget-area header-widget-area">',
-// 			'context' => 'header-widget-area',
-// 		) );
-// 			do_action( 'genesis_header_right' );
-// 			add_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
-// 			add_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
-// 			dynamic_sidebar( 'header-right' );
-// 			remove_filter( 'wp_nav_menu_args', 'genesis_header_menu_args' );
-// 			remove_filter( 'wp_nav_menu', 'genesis_header_menu_wrap' );
-
-// 		echo '</div>';
-
-// 	}
-// }
-
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
 add_action( 'genesis_header', 'stanhopenj_header_markup_open', 5 );
-/**
- * Echo the opening structural markup for the header.
- *
- * @since 1.2.0
- *
- * @uses genesis_markup()          Apply contextual markup.
- * @uses genesis_structural_wrap() Maybe add opening .wrap div tag with header context.
- */
 function stanhopenj_header_markup_open() {
 
 	if ( is_front_page() ) {
 
-	genesis_markup( array(
-		'html5'   => '<div class="site-header-border"></div><header %s><div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>',
-		'xhtml'   => '<div id="header">',
-		'context' => 'site-header',
-	) );
+		genesis_markup( array(
+			'html5'   => '<div class="site-header-border"></div><header %s><div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>',
+			'xhtml'   => '<div id="header">',
+			'context' => 'site-header',
+		) );
 
 	} else {
 
-	genesis_markup( array(
-		'html5'   => '<div class="site-header-border"></div><header %s><div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>',
-		'xhtml'   => '<div id="header">',
-		'context' => 'site-header',
-	) );
-
-
+		genesis_markup( array(
+			'html5'   => '<div class="site-header-border"></div><header %s><div class="header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>',
+			'xhtml'   => '<div id="header">',
+			'context' => 'site-header',
+		) );
 	}
 
-
 	genesis_structural_wrap( 'header' );
-
 }
 
+//* type-size experiment *// THIS WHOLE THING MOVED TO UBER MENU
+// add_action ( 'genesis_before_header', 'stanhopenj_add_text_size', 5 );
+function stanhopenj_add_text_size() {
+    ?>
+    <p class="tees">
+        <a href="javascript:;" data-type-size="bigT" class="bigT">T</a>
+        <a href="javascript:;" data-type-size="medT" class="medT">T</a>
+        <a href="javascript:;" data-type-size="lilT" class="lilT">T</a>
+    </p>
 
+    <?php
+}
 
 //* Add support for custom background
 add_theme_support( 'custom-background' );
@@ -191,7 +148,6 @@ function genesis_sample_secondary_menu_args( $args ) {
 	$args['depth'] = 1;
 
 	return $args;
-
 }
 
 //* Modify size of the Gravatar in the author box
@@ -199,7 +155,6 @@ add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_grava
 function genesis_sample_author_box_gravatar( $size ) {
 
 	return 90;
-
 }
 
 //* Modify size of the Gravatar in the entry comments
@@ -209,5 +164,4 @@ function genesis_sample_comments_gravatar( $args ) {
 	$args['avatar_size'] = 60;
 
 	return $args;
-
 }
