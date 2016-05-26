@@ -1135,7 +1135,7 @@ a.selected {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    width: 50%;
+    width: 60%;
     z-index: 99;
 }
 
@@ -1150,7 +1150,7 @@ a.selected {
     font-family: 'dashicons';
     left: -46px;
     position: absolute;
-    top: 12px;
+    top: 9px;
 }
 
 .search-form input {

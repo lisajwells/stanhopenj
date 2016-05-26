@@ -181,11 +181,30 @@
     padding-right: 5%;
 */  }
 
-.site-header .widget-area {
-    width: 400px;
-    position: absolute;
-    right: 40px;
-}
+  .site-title {
+    font-size: 48px;
+    font-size: 4.8rem;
+  }
+
+  .site-header .widget-area {
+      width: 400px;
+      position: absolute;
+      right: 40px;
+  }
+
+  .site-header .search-form {
+    margin: 16px auto;
+  }
+
+  .search-form input {
+    padding: 6px 12px 6px 32px;
+    height: 40px;
+  }
+
+  .search-form:before {
+      left: 10px;
+      top: 21px;
+  }
 
   .genesis-nav-menu li,
   .header-image .title-area,
@@ -200,10 +219,6 @@
 /*  .site-header .widget-area,
 */  .site-title {
     text-align: center;
-  }
-
-  .site-header .search-form {
-    margin: 16px auto;
   }
 
   .js nav.nav-primary,
