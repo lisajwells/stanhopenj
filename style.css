@@ -1101,18 +1101,22 @@ a.selected {
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
-/*.site-header {
-	background-color: #fff;
-}
-*/
 .site-header > .wrap {
 	padding: 20px 0;
 }
 
 .site-header {
-  background: url("images/page-header.jpg") no-repeat scroll 0 0;
+  background: url("images/page-header.jpg") center;
+  background-size: cover;
   height: 190px;
-  position: relative; /* for absolute gradient div */
+  position: relative;
+}
+
+.home .site-header {
+  background: url("images/home-header.jpg") center;
+  background-size: cover;
+  height: 290px;
+  position: relative;
 }
 
 .site-header-border {
@@ -1121,24 +1125,18 @@ a.selected {
     z-index: 100;
 }
 
-.home .site-header {
-  background: url("images/home-header.jpg") no-repeat scroll 0 0;
-  height: 290px;
-  position: relative; /* for absolute gradient div */
-}
-
 /* ## Title Area
 --------------------------------------------- */
 
 .title-area {
-    float: left;
-    padding: 10px 0;
-    text-align: center;
-    width: 50%;
-    z-index: 99;
+    left: 0;
+    padding: 10px 40px;
     position: absolute;
+    text-align: center;
     top: 50%;
     transform: translateY(-50%);
+    width: 50%;
+    z-index: 99;
 }
 
 .widget_search {
@@ -1156,7 +1154,8 @@ a.selected {
 }
 
 .search-form input {
-  padding: 16px 16px 16px 36px;
+  padding: 10px 16px 10px 36px;
+  height: 48px;
 }
 
 ::-webkit-input-placeholder {
@@ -1178,10 +1177,10 @@ a.selected {
 	padding: 0;
 }
 
-.header-ghost {
+.home-header-ghost,
+.page-header-ghost {
   width: 100%;
-  height: auto;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.6+0,0+50,0+50 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0+50,0+50 */
   background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -1189,6 +1188,14 @@ a.selected {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.home-header-ghost {
+  height: 290px;
+}
+
+.page-header-ghost {
+  height: 190px;
 }
 
 .header-full-width .title-area {
@@ -1247,7 +1254,6 @@ a.selected {
 --------------------------------------------- */
 
 .site-header .widget-area {
-    float: right;
     text-align: right;
     width: 400px;
     position: absolute;
