@@ -49,24 +49,24 @@
 @media only screen and (max-width: 700px) {
   .home .site-header,
   .home-header-ghost {
-    height: 117px;
+    /*height: 117px;*/
   }
 
   .site-header,
   .page-header-ghost {
-    height: 88px;
+    /*height: 88px;*/
   }
 }
 
 @media only screen and (max-width: 500px) {
   .home .site-header,
   .home-header-ghost {
-    height: 96px;
+    /*height: 96px;*/
   }
 
   .site-header,
   .page-header-ghost {
-    height: 63px;
+    /*height: 63px;*/
   }
 }
 
@@ -120,6 +120,12 @@
   .wrap {
     max-width: 960px;
   }
+
+  .site-title {
+    font-size: 48px;
+    font-size: 4.8rem;
+  }
+
 
   .content-sidebar-sidebar .content-sidebar-wrap,
   .sidebar-content-sidebar .content-sidebar-wrap,
@@ -182,14 +188,22 @@
 */  }
 
   .site-title {
-    font-size: 48px;
-    font-size: 4.8rem;
+    font-size: 36px;
+    font-size: 3.6rem;
   }
 
   .site-header .widget-area {
-      width: 400px;
-      position: absolute;
-      right: 40px;
+      text-align: right;
+      width: 300px;
+      /*position: absolute;*/
+      right: 30px;
+    top: auto;
+    transform: translateY(0%);
+    bottom: -65px;
+  }
+
+  .title-area {
+    width: 100%;
   }
 
   .site-header .search-form {
@@ -383,22 +397,28 @@
     padding-right: 5%;
   }
 
-.title-area {
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    top: 0;
-    transform: translateY(0%);
-    width: 100%;
-}
+  .site-header > .wrap {
+    padding: 0;
+  }
 
-  .site-header .widget-area {
+  .title-area {
+      left: 0;
+      padding: 10px 40px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      z-index: 99;
+  }
+
+/*  .site-header .widget-area {
       margin: 0 auto;
       text-align: right;
       position: relative;
-      bottom: 0;
+      bottom: -210px;
       right: 0;
-  }
+  }*/
 
   .after-entry,
   .archive-description,
@@ -438,5 +458,9 @@
     margin: 0;
     width: 100%;
   }
+
+}
+
+
 
 }
