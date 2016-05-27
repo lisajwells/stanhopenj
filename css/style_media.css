@@ -126,6 +126,33 @@
     font-size: 4.8rem;
   }
 
+  #ubermenu-main-2-primary a {
+      font-size: 14px;
+      padding: 15px 24px 15px 4px;
+  }
+
+  .tees {
+      margin: 0;
+      padding: 6px 4px 4px 4px;
+      width: 56px;
+      z-index: 100;
+  }
+
+  #ubermenu-main-2-primary .tees a {
+      padding: 0;
+  }
+
+  #ubermenu-main-2-primary .tees a.bigT {
+    font-size: 19px;
+  }
+
+  #ubermenu-main-2-primary .tees a.medT {
+    font-size: 14px;
+  }
+
+  #ubermenu-main-2-primary .tees a.lilT {
+    font-size: 11px;
+  }
 
   .content-sidebar-sidebar .content-sidebar-wrap,
   .sidebar-content-sidebar .content-sidebar-wrap,

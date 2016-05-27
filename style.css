@@ -1464,8 +1464,8 @@ a.selected {
 
 .side-menu-parent > a:first-child {
     font-family: 'Lora', serif;
-    font-size: 20px;
-    font-size: 2.0rem;
+    font-size: 22px;
+    font-size: 2.2rem;
     border: none;
 }
 
@@ -1664,6 +1664,9 @@ p.entry-meta {
 .sidebar .widget {
 	background-color: #fff;
   padding: 40px 0 40px 40px;
+}
+.sidebar .widget_nav_menu {
+  padding: 40px 0 0 40px;
 }
 
 
