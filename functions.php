@@ -114,6 +114,10 @@ function stanhopenj_add_text_size() {
     <?php
 }
 
+// Reposition the breadcrumbs
+remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
+
 //* Add support for custom background
 add_theme_support( 'custom-background' );
 
