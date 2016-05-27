@@ -65,6 +65,7 @@ font-family: 'Lora', serif;       normal 400 and bold 700
 	- Accessible Menu
 	- Site Header Navigation
 	- After Header Navigation
+  - Sidebar Navigation
 	- Footer Navigation
 - Content Area
 	- Entries
@@ -1441,6 +1442,14 @@ a.selected {
 .nav-primary {
 	background-color: #fff;
 	border-top: 1px solid #eee;
+}
+
+/* ## Sidebar Navigation
+--------------------------------------------- */
+
+.widget_nav_menu {
+  font-weight: 700;
+  text-align: center;
 }
 
 /* ## Footer Navigation
