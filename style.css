@@ -1448,19 +1448,24 @@ a.selected {
 --------------------------------------------- */
 
 .widget_nav_menu {
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
+  line-height: 1.2;
   margin: 0;
   text-align: center;
 }
 
 .widget_nav_menu a {
       display: inline-block;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
 }
 
 .widget_nav_menu ul > li,
 .widget_nav_menu ul > li:last-of-type,
 .widget_nav_menu ul > li li {
-    margin: 0 0 6px 0;
+    margin: 0;
     padding-bottom: 0;
 }
 
