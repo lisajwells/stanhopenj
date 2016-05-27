@@ -34,6 +34,7 @@ font-family: 'Lora', serif;       normal 400 and bold 700
 - Defaults
 	- Typographical Elements
 	- Headings
+  - Helper Classes (bkgd color)
 	- Objects
 	- Gallery
 	- Forms
@@ -193,14 +194,14 @@ textarea:focus,
 }
 
 a {
-	color: #c3251d;
-	text-decoration: underline;
+  border-bottom: 2px solid #91ae3d;
+  color: #1b154b;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	color: #1b154b;
-	text-decoration: none;
+  border-bottom: 2px solid #2f2f82;
 }
 
 p {
@@ -297,6 +298,25 @@ h5 {
 h6 {
 	font-size: 16px;
 	font-size: 1.6rem;
+}
+
+/* ## Helper Classes
+--------------------------------------------- */
+
+.bkgd-pine {
+    background-color: #0b4d26;
+}
+.bkgd-sky {
+    background-color: #4083ae;
+}
+.bkgd-darkblue {
+    background-color: #2f2f82;
+}
+.bkgd-navy {
+    background-color: #1b154b;
+}
+.bkgd-lime {
+    background-color: #91ae3d;
 }
 
 /* ## Objects
@@ -929,7 +949,6 @@ img.alignright,
 }
 
 .accordion-title {
-    background-color: #0b4d26;
     color: #fff;
     cursor: pointer;
     font-family: 'Lora', serif;
@@ -1030,6 +1049,7 @@ img.alignright,
 }
 
 .tees a {
+  border: none;
   color: #fff;
   text-decoration: none;
 }
@@ -1253,6 +1273,7 @@ a.selected {
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
+  border: none;
 	color: #fff;
 	text-decoration: none;
 }
