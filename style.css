@@ -50,6 +50,7 @@ font-family: 'Lora', serif;       normal 400 and bold 700
 	- Titles
 	- WordPress
 - Widgets
+  - Accordion
 	- Featured Content
 - Plugins
   - Text Resizer
@@ -752,6 +753,7 @@ th:first-child {
   font-size: 1.4rem;
   font-size: 14px;
   margin-bottom: 1px;
+  margin-top: 32px;
   padding: 12px 30px;
 }
 
@@ -913,6 +915,39 @@ img.alignright,
 
 /* # Widgets
 ---------------------------------------------------------------------------------------------------- */
+
+/* see line 1603 */
+/*.sidebar-primary .widget {
+  padding: 40px 0 40px 40px;
+}
+*/
+
+/* Accordion Styles */
+
+.accordion {
+    /*margin-bottom: 20px;*/
+}
+
+.accordion-title {
+    background-color: #0b4d26;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 55px;
+    margin: 0 0 12px 0;
+    padding: 19px 10px;
+    text-align: center;
+}
+
+.accordion-title:hover {}
+.accordion-title:first-child {border: none;}
+.accordion-title.open {cursor: default;}
+.accordion-content {padding-bottom: 20px;}
+
+/**/
 
 .widget {
 	margin-bottom: 40px;
@@ -1570,7 +1605,7 @@ p.entry-meta {
 
 .sidebar .widget {
 	background-color: #fff;
-	padding: 40px;
+  padding: 40px 0 40px 40px;
 }
 
 
