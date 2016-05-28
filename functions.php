@@ -149,7 +149,7 @@ function genesis_sample_secondary_menu_args( $args ) {
 		return $args;
 	}
 
-	$args['depth'] = 1;
+	$args['depth'] = 2;
 
 	return $args;
 }
