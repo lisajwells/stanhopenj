@@ -1546,13 +1546,21 @@ p.entry-meta {
   margin-right: 0;
 }
 
-.footer-widgets-1 h3 {
+#genesis-footer-widgets .footer-widgets-1 {
+border-right: 1px solid #fff;
+    padding-right: 5%;
+    width: 25%;
+  }
+
+#genesis-footer-widgets .footer-widgets-1 h3 {
   font-size: 25px;
   font-size: 2.5rem;
 }
 
 #footer-contact-btn {
   background-color: lime;
+  font-size: 20px;
+  text-transform: none;
 }
 
 /*.footer-widgets-1,
