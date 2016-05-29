@@ -455,18 +455,28 @@ input[type="reset"],
 input[type="submit"],
 .button {
 	background-color: #1b154b;
-	border: 0;
-	color: #fff;
-	cursor: pointer;
+  border: 3px solid lime;
+  color: #fff;
+  cursor: pointer;
   font-family: 'Lora', serif;
-	font-size: 21px;
-	font-size: 2.1rem;
-	font-weight: 400;
-	padding: 13px 24px;
-	text-decoration: none;
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: 400;
+  padding: 10px 24px;
+  text-decoration: none;
   text-transform: uppercase;
-	white-space: normal;
-	width: 240px;
+  white-space: normal;
+  width: 240px;
+}
+
+button.small,
+.button.small {
+	border: 2px solid lime;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+	padding: 3px 24px;
+  width: 160px;
 }
 
 button:hover,
@@ -479,7 +489,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: #c3251d;
+	background-color: darkblue;
 	color: #fff;
 }
 
