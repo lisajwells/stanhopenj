@@ -115,6 +115,10 @@
   border-top: 1px solid #eee;
 }
 
+#ubermenu-main-2-primary {
+  z-index: 100;
+}
+
 /* ## Sidebar Navigation
 --------------------------------------------- */
 
@@ -162,8 +166,3 @@
   padding: 0 20px 10px;
 }
 
-
-
-#ubermenu-main-2-primary {
-  z-index: 101;
-}

@@ -14,11 +14,11 @@
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*
-pine: #0b4d26
-navy: #1b154b
-darkblue: #2f2f82
-lime: #91ae3d
-skyblue: #4083ae
+darkgreen: #0b4d26;
+midnightblue: #1b154b;
+darkblue: #2f2f82;
+lime: #91ae3d;
+dodgerblue: #4083ae;
 lightskyblue: #8dbbc9;
 
 font-family: 'Lato', sans-serif;  normal 400 and bold 700
@@ -1510,15 +1510,25 @@ p.entry-meta {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
-.footer-widgets {
-	background-color: #fff;
-	font-size: 18px;
-	font-size: 1.8rem;
-	clear: both;
-	padding: 60px 0;
+#genesis-footer-widgets .widget-area {
+    width: 20%;
+    float: left;
+    margin-right: 5%;
 }
 
-.footer-widgets-1,
+#genesis-footer-widgets .footer-widgets-4 {
+  margin-right: 0;
+}
+
+.footer-widgets {
+	background-color: #fff;
+	font-size: 14px;
+	font-size: 1.4rem;
+	clear: both;
+  padding: 60px 40px;
+}
+
+/*.footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
 	width: 380px;
@@ -1535,11 +1545,21 @@ p.entry-meta {
 
 .footer-widgets-3 {
 	float: right;
-}
+}*/
 
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
+
+#genesis-footer-widgets {
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+}
+#genesis-footer-widgets a {
+  border: none;
+  color: #fff;
+}
 
 .site-footer {
   background-color: darkblue ;
