@@ -1510,6 +1510,20 @@ p.entry-meta {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
+#genesis-footer-widgets {
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+	font-size: 14px;
+	font-size: 1.4rem;
+	clear: both;
+  padding: 60px 40px;
+}
+#genesis-footer-widgets a {
+  border: none;
+  color: #fff;
+}
+
 #genesis-footer-widgets .widget-area {
     width: 20%;
     float: left;
@@ -1520,13 +1534,6 @@ p.entry-meta {
   margin-right: 0;
 }
 
-.footer-widgets {
-	background-color: #fff;
-	font-size: 14px;
-	font-size: 1.4rem;
-	clear: both;
-  padding: 60px 40px;
-}
 
 /*.footer-widgets-1,
 .footer-widgets-2,
@@ -1550,16 +1557,6 @@ p.entry-meta {
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
-
-#genesis-footer-widgets {
-  background-color: darkblue;
-  color: #fff;
-  text-align: center;
-}
-#genesis-footer-widgets a {
-  border: none;
-  color: #fff;
-}
 
 .site-footer {
   background-color: darkblue ;

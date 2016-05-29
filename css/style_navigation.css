@@ -166,3 +166,8 @@
   padding: 0 20px 10px;
 }
 
+#genesis-footer-widgets .widget_nav_menu {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
