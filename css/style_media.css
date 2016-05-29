@@ -445,12 +445,11 @@
     right: 0;
     width: 262px;
     float: none;
-}
+  }
+
   .home .site-header .widget-area {
     bottom: -165px;
-}
-
-
+  }
 
   .after-entry,
   .archive-description,
@@ -490,6 +489,16 @@
     margin: 0;
     width: 100%;
   }
+
+  #genesis-footer-widgets .footer-widgets-1,
+  #genesis-footer-widgets .footer-widgets-2,
+  #genesis-footer-widgets .footer-widgets-3,
+  #genesis-footer-widgets .footer-widgets-4 {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+
 
 }
 
