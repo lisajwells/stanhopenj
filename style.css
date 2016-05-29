@@ -455,7 +455,7 @@ input[type="reset"],
 input[type="submit"],
 .button {
 	background-color: #1b154b;
-  border: 3px solid lime;
+  border: 3px solid #91ae3d;
   color: #fff;
   cursor: pointer;
   font-family: 'Lora', serif;
@@ -471,7 +471,7 @@ input[type="submit"],
 
 button.small,
 .button.small {
-	border: 2px solid lime;
+	border: 2px solid #91ae3d;
   font-family: 'Lato', sans-serif;
   font-size: 13px;
   font-size: 1.3rem;
@@ -489,7 +489,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: darkblue;
+	background-color: #2f2f82;
 	color: #fff;
 }
 
@@ -1350,7 +1350,7 @@ a.selected {
 .entry {
 	background-color: #fff;
 	margin-bottom: 40px;
-	padding: 70px 80px;
+	padding: 40px 80px;
 }
 
 .entry-content ol,
@@ -1523,7 +1523,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 #genesis-footer-widgets {
-  background-color: darkblue;
+  background-color: #2f2f82;
   color: #fff;
   text-align: center;
 	font-size: 14px;
@@ -1558,13 +1558,13 @@ border-right: 1px solid #fff;
 }
 
 #footer-contact-btn {
-  background-color: lime;
+  background-color: #91ae3d;
   font-size: 20px;
   text-transform: none;
 }
 
 #footer-contact-btn:hover {
-  background-color: dodgerblue;
+  background-color: #4083ae;
   font-size: 20px;
   text-transform: none;
 }
@@ -1573,21 +1573,25 @@ border-right: 1px solid #fff;
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: darkblue ;
+  background-color: #2f2f82 ;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1;
-  padding: 60px 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  padding: 0 0 60px;
   text-align: center;
 }
 
 .site-footer .nav-secondary nav {
-  background-color: darkblue ;
+  background-color: #2f2f82 ;
   color: #fff;
   text-align: center;
 }
 
 .site-footer p {
-	margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.site-footer a {
+  color: #fff;
 }

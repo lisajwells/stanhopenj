@@ -37,7 +37,7 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'stanhopenj-fonts', '//fonts.googleapis.com/css?family=Lora:400,700|Lato:400,700);', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'stanhopenj-uber-css', get_stylesheet_directory_uri() . '/css/style_navigation.css' );
+	wp_enqueue_style( 'stanhopenj-nav-css', get_stylesheet_directory_uri() . '/css/style_navigation.css' );
 	wp_enqueue_style( 'stanhopenj-media-css', get_stylesheet_directory_uri() . '/css/style_media.css' );
 	wp_enqueue_style( 'stanhopenj-print-css', get_stylesheet_directory_uri() . '/css/style_print.css' );
 
@@ -127,11 +127,25 @@ add_theme_support( 'genesis-after-entry-widget-area' );
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 4 );
 
+// add the alert front-page widget
+genesis_register_sidebar( array(
+	'id'		=> 'alert-box',
+	'name'		=> __( 'Alert Box', 'genesis-sample' ),
+	'description'	=> __( 'This is the widget area for the front page in case there is an alert to display.', 'genesis-sample' ),
+) );
+
 //* Add Image Sizes
 add_image_size( 'featured-image', 720, 400, TRUE );
 
 //* Rename primary and secondary navigation menus
 add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
+
+// Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+	$creds = '[footer_copyright] &middot; Some words here &middot; <a href="http://curioelectro.com/">Web Design and Development by&nbsp;Curio&nbsp;Electro</a>';
+	return $creds;
+}
 
 //* Reposition the primary navigation menu
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
