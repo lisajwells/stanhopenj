@@ -1542,10 +1542,6 @@ p.entry-meta {
     margin-right: 5%;
 }
 
-#genesis-footer-widgets .footer-widgets-4 {
-  margin-right: 0;
-}
-
 #genesis-footer-widgets .footer-widgets-1 {
 border-right: 1px solid #fff;
     padding-right: 5%;
@@ -1557,31 +1553,21 @@ border-right: 1px solid #fff;
   font-size: 2.5rem;
 }
 
+#genesis-footer-widgets .footer-widgets-4 {
+  margin-right: 0;
+}
+
 #footer-contact-btn {
   background-color: lime;
   font-size: 20px;
   text-transform: none;
 }
 
-/*.footer-widgets-1,
-.footer-widgets-2,
-.footer-widgets-3 {
-	width: 380px;
+#footer-contact-btn:hover {
+  background-color: dodgerblue;
+  font-size: 20px;
+  text-transform: none;
 }
-
-.footer-widgets-1 {
-	margin-right: 70px;
-}
-
-.footer-widgets-1,
-.footer-widgets-2 {
-	float: left;
-}
-
-.footer-widgets-3 {
-	float: right;
-}
-
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
