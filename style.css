@@ -458,13 +458,15 @@ input[type="submit"],
 	border: 0;
 	color: #fff;
 	cursor: pointer;
-	font-size: 16px;
-	font-size: 1.6rem;
-	font-weight: 700;
-	padding: 16px 24px;
+  font-family: 'Lora', serif;
+	font-size: 21px;
+	font-size: 2.1rem;
+	font-weight: 400;
+	padding: 13px 24px;
 	text-decoration: none;
+  text-transform: uppercase;
 	white-space: normal;
-	width: auto;
+	width: 240px;
 }
 
 button:hover,
@@ -1537,6 +1539,10 @@ p.entry-meta {
 .footer-widgets-1 h3 {
   font-size: 25px;
   font-size: 2.5rem;
+}
+
+#footer-contact-btn {
+  background-color: lime;
 }
 
 /*.footer-widgets-1,
