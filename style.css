@@ -1534,6 +1534,10 @@ p.entry-meta {
   margin-right: 0;
 }
 
+.footer-widgets-1 h3 {
+  font-size: 25px;
+  font-size: 2.5rem;
+}
 
 /*.footer-widgets-1,
 .footer-widgets-2,
@@ -1552,7 +1556,7 @@ p.entry-meta {
 
 .footer-widgets-3 {
 	float: right;
-}*/
+}
 
 
 /* # Site Footer

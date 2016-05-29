@@ -145,7 +145,7 @@
 }
 
 .side-menu-parent > a:first-child:hover {
-  color:  #8dbbc9;
+  color: #8dbbc9;
 }
 
 .widget_nav_menu ul > li,
@@ -178,4 +178,8 @@
     font-size: 2.2rem;
     font-weight: 700;
     border: none;
+}
+
+#genesis-footer-widgets a:hover {
+  color: #8dbbc9;
 }
