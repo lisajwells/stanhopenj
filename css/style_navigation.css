@@ -171,3 +171,11 @@
   font-size: 1.4rem;
   font-weight: 400;
 }
+
+.footer-menu-parent > a:first-child {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border: none;
+}
