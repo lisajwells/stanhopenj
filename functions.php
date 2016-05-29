@@ -37,7 +37,7 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'stanhopenj-fonts', '//fonts.googleapis.com/css?family=Lora:400,700|Lato:400,700);', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'stanhopenj-uber-css', get_stylesheet_directory_uri() . '/css/style_uber.css' );
+	wp_enqueue_style( 'stanhopenj-uber-css', get_stylesheet_directory_uri() . '/css/style_navigation.css' );
 	wp_enqueue_style( 'stanhopenj-media-css', get_stylesheet_directory_uri() . '/css/style_media.css' );
 	wp_enqueue_style( 'stanhopenj-print-css', get_stylesheet_directory_uri() . '/css/style_print.css' );
 
@@ -125,7 +125,7 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-after-entry-widget-area' );
 
 //* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
+add_theme_support( 'genesis-footer-widgets', 4 );
 
 //* Add Image Sizes
 add_image_size( 'featured-image', 720, 400, TRUE );
