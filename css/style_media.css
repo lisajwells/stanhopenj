@@ -381,6 +381,11 @@
     border-right: none;
     padding-right: 0;
     width: 100%;
+    margin-bottom: 28px;
+  }
+
+  #genesis-footer-widgets .footer-widgets-1 p {
+    margin-bottom: 14px;
   }
 
   #genesis-footer-widgets .footer-widgets-2,
