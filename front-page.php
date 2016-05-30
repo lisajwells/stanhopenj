@@ -44,9 +44,11 @@ function stanhopenj_events_loop() {
     else echo '<div id="upcoming-home">';
 
     foreach( $events as $event ) {
+        $start_datetime = tribe_get_start_date();
+
         echo '<div class="event-home">';
-        echo get_the_title( $event ) . '<br/>';
-        echo tribe_meta_event_cats();
+        echo '<h3>' . get_the_title( $event ) . '</h3><br/>';
+        echo '<p class="event-home-date">' . $start_datetime . '</p>';
         echo '</div>';
     }
 
