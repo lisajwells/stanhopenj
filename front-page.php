@@ -19,9 +19,17 @@ function stanhopenj_add_alert() {
 // If we supply no parameters, the default number of events to
 // show per page are fetched, earliest first
 
-add_action( 'genesis_loop', 'stanhopenj_events_loop' );
+add_action( 'genesis_before_loop', 'stanhopenj_events_loop' );
 function stanhopenj_events_loop() {
     $events = tribe_get_events( array(
+        'tax_query' => array(
+                         array(
+                             'taxonomy' => 'tribe_events_cat',
+                             'field' => 'slug',
+                             'terms' => array('featured'),
+                 // 'operator' => 'NOT IN'
+                         )
+                         ),
         'posts_per_page' => 3,
         'cat'            => 'featured'
     ) );
@@ -34,6 +42,7 @@ function stanhopenj_events_loop() {
     // Or we may have some to show
     else foreach( $events as $event ) {
         echo get_the_title( $event ) . '<br/>';
+        echo tribe_meta_event_cats();
     }
 }
 
