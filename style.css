@@ -1335,6 +1335,19 @@ a.selected {
     transform: translateY(-50%);
 }
 
+.alert-box {
+  background-color: #fff;
+  border: 1px solid red;
+  color: red;
+  margin: 40px 80px;
+  padding: 10px;
+}
+
+.alert-box .widget {
+  margin-bottom: 0;
+}
+
+
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 /* !!!!!!! see style_navigation.css for all navigation !!!!!! */
@@ -1523,7 +1536,12 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 #genesis-footer-widgets {
-  background-color: #2f2f82;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#262262+0,2e3192+100 */
+  background: #2f2f82; /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(38,34,98,1) 0%, rgba(46,49,146,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262262', endColorstr='#2e3192',GradientType=1 ); /* IE6-9 */
   color: #fff;
   text-align: center;
 	font-size: 14px;
@@ -1573,7 +1591,12 @@ border-right: 1px solid #fff;
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: #2f2f82 ;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#262262+0,2e3192+100 */
+  background: #2f2f82; /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(38,34,98,1) 0%, rgba(46,49,146,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262262', endColorstr='#2e3192',GradientType=1 ); /* IE6-9 */
   color: #fff;
   font-size: 14px;
   font-size: 1.4rem;
@@ -1583,7 +1606,12 @@ border-right: 1px solid #fff;
 }
 
 .site-footer .nav-secondary nav {
-  background-color: #2f2f82 ;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#262262+0,2e3192+100 */
+  background: #2f2f82; /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(38,34,98,1) 0%, rgba(46,49,146,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262262', endColorstr='#2e3192',GradientType=1 ); /* IE6-9 */
   color: #fff;
   text-align: center;
 }
