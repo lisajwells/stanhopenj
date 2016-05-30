@@ -21,6 +21,7 @@ function stanhopenj_add_alert() {
 
 add_action( 'genesis_before_loop', 'stanhopenj_events_loop' );
 function stanhopenj_events_loop() {
+    echo '<h2>Upcoming Events</h2>';
     $events = tribe_get_events( array(
         'tax_query' => array(
                          array(
@@ -38,10 +39,15 @@ function stanhopenj_events_loop() {
         echo 'Sorry, nothing found.';
     }
 
+
     // Or we may have some to show
-    else foreach( $events as $event ) {
+    else echo '<div id="upcoming-home">';
+
+    foreach( $events as $event ) {
+        echo '<div class="event-home">';
         echo get_the_title( $event ) . '<br/>';
         echo tribe_meta_event_cats();
+        echo '</div>';
     }
 
 
