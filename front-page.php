@@ -27,9 +27,8 @@ function stanhopenj_events_loop() {
                              'taxonomy' => 'tribe_events_cat',
                              'field' => 'slug',
                              'terms' => array('featured'),
-                 // 'operator' => 'NOT IN'
                          )
-                         ),
+                    ),
         'posts_per_page' => 3,
         'cat'            => 'featured'
     ) );
@@ -44,43 +43,50 @@ function stanhopenj_events_loop() {
         echo get_the_title( $event ) . '<br/>';
         echo tribe_meta_event_cats();
     }
-}
+
+
+
+
+
+
+
+} // end stanhopenj_events_loop()
 
 // Add our custom loop
-// add_action( 'genesis_loop', 'stanhopenj_events_loop' );
+add_action( 'genesis_loop', 'stanhopenj_events_loopx' );
 
-// function stanhopenj_events_loop() {
+function stanhopenj_events_loopx() {
 
-//     $args = array(
-//         'cat'           => 21,
-//         'orderby'       => 'post_date',
-//         'order'         => 'DESC',
-//         'posts_per_page'=> '3', // overrides posts per page in theme settings
-//     );
+    $args = array(
+        'tribe_events_cat'           => 21,
+        'orderby'       => 'post_date',
+        'order'         => 'DESC',
+        'posts_per_page'=> '3', // overrides posts per page in theme settings
+    );
 
-//     $loop = new WP_Query( $args );
-//     if( $loop->have_posts() ) {
+    $loop = new WP_Query( $args );
+    if( $loop->have_posts() ) {
 
-//         // this is shown before the loop
-//         echo '<h2>Read my latest blog posts</h2>';
+        // this is shown before the loop
+        echo '<h2>Read my latest blog posts</h2>';
 
-//         // loop through posts
-//         while( $loop->have_posts() ): $loop->the_post();
+        // loop through posts
+        while( $loop->have_posts() ): $loop->the_post();
 
-//         echo '<h3><a href="' . get_the_permalink() .'">'. get_the_title() . '</a></h3>';
-//         echo '<p>' . get_the_date() . '</p>';
-//         echo '<p>' . get_the_excerpt() . '</p>';
+        echo '<h3><a href="' . get_the_permalink() .'">'. get_the_title() . '</a></h3>';
+        echo '<p>' . get_the_date() . '</p>';
+        echo '<p>' . get_the_excerpt() . '</p>';
 
 
-//         endwhile;
+        endwhile;
 
-//         // link to more posts is shown after the loop
-//         echo '<a href="./blog/">More from the blog</a>';
-//     }
+        // link to more posts is shown after the loop
+        echo '<a href="./blog/">More from the blog</a>';
+    }
 
-//     wp_reset_postdata();
+    wp_reset_postdata();
 
-// }
+}
 
 
 genesis();
