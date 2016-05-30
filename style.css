@@ -678,7 +678,7 @@ th:first-child {
 
 .sidebar-primary {
 	float: right;
-	width: 360px;
+	width: 320px;
 }
 
 .sidebar-content .sidebar-primary,
@@ -1525,7 +1525,7 @@ p.entry-meta {
 
 .sidebar .widget {
 	background-color: #fff;
-  padding: 40px 0 40px 40px;
+  padding: 40px 0 40px 0;
 }
 .sidebar .widget_nav_menu {
   padding: 40px 0 0 40px;
