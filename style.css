@@ -53,6 +53,7 @@ font-family: 'Lora', serif;       normal 400 and bold 700
 - Widgets
   - Accordion
 	- Featured Content
+  - Events Front Page
 - Plugins
   - Text Resizer
 	- Genesis eNews Extended
@@ -1028,20 +1029,161 @@ img.alignright,
 --------------------------------------------- */
 
 .featured-content .entry {
-	background: none;
-	padding: 0;
+  background: none;
+  padding: 0;
 }
 
 .featured-content .entry:last-of-type {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .featured-content .entry-title {
-	font-size: 20px;
-	font-size: 2rem;
+  font-size: 20px;
+  font-size: 2rem;
 }
 
+/* ## Events Front Page
+--------------------------------------------- */
 
+/* Event Calendar Pro Widget */
+#tribe-events-adv-list-widget-2 {
+  text-align: center;
+}
+
+#tribe-events-adv-list-widget-2 h3.widget-title {
+  font-size: 33px;
+  font-size: 3.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tribe-mini-calendar-event .list-date {
+  display: none;
+}
+
+#tribe-events-adv-list-widget-2 .type-tribe_events {
+  display:inline-block;
+  width: 26.666666%;
+  margin-right: 10%;
+  float: left;
+  border:none;
+}
+
+#tribe-events-adv-list-widget-2 .type-tribe_events:last-of-type {
+  margin-right: 0;
+}
+
+.sidebar-primary .tribe-mini-calendar-event .list-info h2,
+.sidebar-primary .tribe-mini-calendar-event .list-info h2 a {
+  font-family: 'Open Sans Condensed', 'Lato', Helvetica, sans-serif;
+  font-size : 18px;
+  font-weight:bold;
+  line-height:24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding:0;
+}
+
+.sidebar-primary .duration,
+.sidebar-primary .vcard {
+  margin-top:4px;
+  margin-bottom: 4px;
+}
+
+.sidebar-primary .locality::after {
+  content: ",";
+}
+
+.tribe-mini-calendar-event .tribe-events-event-image {
+  margin-top:6px;
+  margin-bottom:6px;
+}
+
+.tribe-mini-calendar-event .list-info {
+  font-size: 15px;
+  width:100%;
+}
+
+.duration.venue {
+  margin-bottom:12px;
+}
+
+/*Home Featured Events */
+.home-featured-events .entry-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.home-featured-events .widget-title {
+  font-weight:400;
+}
+
+.home-featured-events .entry {
+  border: none;
+  margin-bottom: 20px;
+  padding: 0 0 4px;
+}
+
+.home-featured-events .wrap {
+  background-color: rgba(255, 255, 255, 0.5);
+  border:none;
+  padding: 20px 10px;
+}
+
+.home-featured-events .widget {
+  float: none;
+  font-size: 15px;
+  width:100%;
+}
+
+/*.home-featured-events .tribe-mini-calendar-event {
+  display:inline-block;
+  width: 22%;
+  margin-right: 3%;
+  float: left;
+  border:none;
+}
+*/
+.home-featured-events .tribe-events-widget-link {
+  clear: both;
+  text-align: right;
+  padding-top: 12px;
+  border-top: 1px solid #dedede;
+}
+
+.home-featured-events .list-info h2 {
+  font-size:20px;
+  font-weight: 700;
+}
+
+.entry-image.attachment-tribe_events {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.featured-content a.alignnone {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.tribe-mini-calendar-event .list-info h2,
+.tribe-mini-calendar-event .list-info h2 a {
+  font-family: 'Open Sans Condensed,' 'Lato', Helvetica, sans-serif;
+  font-size : 18px;
+  font-weight:bold;
+  line-height:24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding:0;
+}
+
+/*.list-date {
+  display: none;
+}
+*/
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
 
