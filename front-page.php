@@ -16,84 +16,13 @@ function stanhopenj_add_alert() {
     ) );
 }
 
-// If we supply no parameters, the default number of events to
-// show per page are fetched, earliest first
-
-add_action( 'genesis_before_loop', 'stanhopenj_events_loop' );
-function stanhopenj_events_loop() {
-    echo '<h2>Upcoming Events</h2>';
-    $events = tribe_get_events( array(
-        'tax_query' => array(
-                         array(
-                             'taxonomy' => 'tribe_events_cat',
-                             'field' => 'slug',
-                             'terms' => array('featured'),
-                         )
-                    ),
-        'posts_per_page' => 3,
-        'cat'            => 'featured'
+// add events list widget
+add_action( 'genesis_before_loop', 'stanhopenj_add_upcoming' );
+function stanhopenj_add_upcoming() {
+    genesis_widget_area ('upcoming-events', array(
+        'before' => '<div class="upcoming-events"><div class="wrap">',
+        'after' => '</div></div>',
     ) );
-
-    // The result set may be empty
-    if ( empty( $events ) ) {
-        echo 'Sorry, nothing found.';
-    }
-
-
-    // Or we may have some to show
-    else echo '<div id="upcoming-home">';
-
-    foreach( $events as $event ) {
-        $start_datetime = tribe_get_start_date();
-
-        echo '<div class="event-home">';
-        echo '<h3>' . get_the_title( $event ) . '</h3><br/>';
-        echo '<p class="event-home-date">' . $start_datetime . '</p>';
-        echo '</div>';
-    }
-
-
-
-
-
-
-
-} // end stanhopenj_events_loop()
-
-// Add our custom loop
-add_action( 'genesis_loop', 'stanhopenj_events_loopx' );
-
-function stanhopenj_events_loopx() {
-
-    $args = array(
-        'tribe_events_cat'           => 21,
-        'orderby'       => 'post_date',
-        'order'         => 'DESC',
-        'posts_per_page'=> '3', // overrides posts per page in theme settings
-    );
-
-    $loop = new WP_Query( $args );
-    if( $loop->have_posts() ) {
-
-        // this is shown before the loop
-        echo '<h2>Read my latest blog posts</h2>';
-
-        // loop through posts
-        while( $loop->have_posts() ): $loop->the_post();
-
-        echo '<h3><a href="' . get_the_permalink() .'">'. get_the_title() . '</a></h3>';
-        echo '<p>' . get_the_date() . '</p>';
-        echo '<p>' . get_the_excerpt() . '</p>';
-
-
-        endwhile;
-
-        // link to more posts is shown after the loop
-        echo '<a href="./blog/">More from the blog</a>';
-    }
-
-    wp_reset_postdata();
-
 }
 
 

@@ -131,7 +131,14 @@ add_theme_support( 'genesis-footer-widgets', 4 );
 genesis_register_sidebar( array(
 	'id'		=> 'alert-box',
 	'name'		=> __( 'Alert Box', 'genesis-sample' ),
-	'description'	=> __( 'This is the widget area for the front page in case there is an alert to display.', 'genesis-sample' ),
+	'description'	=> __( 'This is the widget area for the front page in case there is an alert to display. Put a text widget in it to display. Remove the text widget to hide.', 'genesis-sample' ),
+) );
+
+// add the events front-page widget
+genesis_register_sidebar( array(
+	'id'		=> 'upcoming-events',
+	'name'		=> __( 'Upcoming Events', 'genesis-sample' ),
+	'description'	=> __( 'This is the widget area for the front page Upcoming Events.', 'genesis-sample' ),
 ) );
 
 //* Add Image Sizes
