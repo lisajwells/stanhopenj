@@ -18,19 +18,23 @@ function stanhopenj_add_alert() {
 
 // If we supply no parameters, the default number of events to
 // show per page are fetched, earliest first
-$events = tribe_get_events( array(
-    'posts_per_page' => 3,
-    'cat'            => 'featured'
-) );
 
-// The result set may be empty
-if ( empty( $events ) ) {
-    echo 'Sorry, nothing found.';
-}
+add_action( 'genesis_loop', 'stanhopenj_events_loop' );
+function stanhopenj_events_loop() {
+    $events = tribe_get_events( array(
+        'posts_per_page' => 3,
+        'cat'            => 'featured'
+    ) );
 
-// Or we may have some to show
-else foreach( $events as $event ) {
-    echo get_the_title( $event ) . '<br/>';
+    // The result set may be empty
+    if ( empty( $events ) ) {
+        echo 'Sorry, nothing found.';
+    }
+
+    // Or we may have some to show
+    else foreach( $events as $event ) {
+        echo get_the_title( $event ) . '<br/>';
+    }
 }
 
 // Add our custom loop
