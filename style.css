@@ -21,8 +21,10 @@ lime: #91ae3d;
 dodgerblue: #4083ae;
 lightskyblue: #8dbbc9;
 
-font-family: 'Lato', sans-serif;  normal 400 and bold 700
-font-family: 'Lora', serif;       normal 400 and bold 700
+font-family: 'Lato', sans-serif;
+  normal 400 and bold 700
+font-family: 'Lora', serif;
+  normal 400 and bold 700
 */
 
 
@@ -1126,6 +1128,18 @@ img.alignright,
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+#homepage-to-events-btn {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  text-transform: none;
+}
+
+#homepage-to-events-btn span {
+  font-family: 'Lora', serif;
+  font-weight: 700;
 }
 
 /*.sidebar-primary .tribe-mini-calendar-event .list-info h2,
