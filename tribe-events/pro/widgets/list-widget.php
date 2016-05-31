@@ -57,11 +57,6 @@ if ( isset( $posts ) && $posts ) :
 
 	<?php endforeach ?>
 
-	<p class="tribe-events-widget-link">
-		<a href="<?php esc_attr_e( esc_url( $link_to_all ) ) ?>" rel="bookmark">
-			<?php esc_html_e( 'View More&hellip;', 'tribe-events-calendar-pro' ) ?>
-		</a>
-	</p>
 
 <?php
 // No Events were found.
