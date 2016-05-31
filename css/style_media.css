@@ -85,8 +85,7 @@
     width: 920px;
   }
 
-  .content
-  /*.site-header .widget-area*/ {
+  .content {
     width: 800px;
   }
 
@@ -150,8 +149,7 @@
     width: 740px;
   }
 
-  .content/*,
-  .site-header .widget-area*/ {
+  .content {
     width: 620px;
   }
 
@@ -201,7 +199,6 @@
   .site-header .widget-area {
       text-align: right;
       width: 300px;
-      /*position: absolute;*/
       right: 30px;
       top: auto;
       transform: translateY(0%);
@@ -228,16 +225,14 @@
 
   .genesis-nav-menu li,
   .header-image .title-area,
-  .site-header ul.genesis-nav-menu,
-  /*.site-header .search-form*/ {
+  .site-header ul.genesis-nav-menu {
     float: none;
   }
 
   .genesis-nav-menu,
   .site-description,
   .site-header .title-area,
-/*  .site-header .widget-area,
-*/  .site-title {
+  .site-title {
     text-align: center;
   }
 
