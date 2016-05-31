@@ -680,7 +680,8 @@ th:first-child {
 
 .sidebar-primary {
 	float: right;
-	width: 320px;
+  max-width: 320px;
+  width: 25%;
 }
 
 .sidebar-content .sidebar-primary,
