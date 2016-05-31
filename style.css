@@ -657,7 +657,8 @@ th:first-child {
 .content {
 	float: right;
   padding: 40px 0 0 0;
-	width: 880px;
+  width: 68%;
+  max-width: 880px;
 }
 
 .content-sidebar .content,
