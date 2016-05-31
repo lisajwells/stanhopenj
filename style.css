@@ -1514,7 +1514,7 @@ a.selected {
   background-color: #fff;
   border: 1px solid red;
   color: red;
-  margin: 40px 80px;
+  margin: 0 0 40px 0;
   padding: 10px;
 }
 

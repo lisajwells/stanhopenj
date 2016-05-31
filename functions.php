@@ -60,16 +60,6 @@ add_theme_support( 'genesis-accessibility', array( '404-page', 'drop-down-menu',
 //* Add viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
 
-//* Add support for custom header
-// lw removing for different header height on home page ala http://wpsites.net/web-design/displaying-different-header-images/
-// add_theme_support( 'custom-header', array(
-// 	'width'           => 600,
-// 	'height'          => 160,
-// 	'header-selector' => '.site-title a',
-// 	'header-text'     => false,
-// 	'flex-height'     => true,
-// ) );
-
 // Change placeholder search form text
 add_filter( 'genesis_search_text', 'stanhopnj_search_button_text' );
 function stanhopnj_search_button_text( $text ) {
@@ -131,7 +121,7 @@ add_theme_support( 'genesis-footer-widgets', 4 );
 genesis_register_sidebar( array(
 	'id'		=> 'alert-box',
 	'name'		=> __( 'Alert Box', 'genesis-sample' ),
-	'description'	=> __( 'This is the widget area for the front page in case there is an alert to display. Put a text widget in it to display. Remove the text widget to hide.', 'genesis-sample' ),
+	'description'	=> __( 'This is the widget area for the front page in case there is an alert to display. Move the text widget from Inactive Widgets into it to display. Move the text widget to Inactive Widgets to hide.', 'genesis-sample' ),
 ) );
 
 // add the events front-page widget
