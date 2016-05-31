@@ -1355,14 +1355,14 @@ a.selected {
 }
 
 .site-header {
-  background: url("images/page-header.jpg") center;
+  background: url("images/header-waterfall.jpg") center;
   background-size: cover;
   height: 190px;
   position: relative;
 }
 
 .home .site-header {
-  background: url("images/home-header.jpg") center;
+  background: url("images/header-waterfall.jpg") center;
   background-size: cover;
   height: 290px;
   position: relative;

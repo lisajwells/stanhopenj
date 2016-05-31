@@ -104,21 +104,18 @@ function stanhopenj_add_text_size() {
     <?php
 }
 
-// Add Conditional Widgets support (UI & Logic) for post type 'foo' and taxonomy 'category'
+// Add Conditional Widgets support (UI & Logic) for post type 'tribe_events' and taxonomy 'category'
 
 // 'tribe_events_cat' => 'featured'
-
 add_filter('conditional_widgets_type_tax_pairs', 'foo_conditional_widget_type_tax_pairs' );
 
 function foo_conditional_widget_type_tax_pairs( $pairs_array ) {
 
-$foo_pair = array('tax'=>'tribe_events_cat', 'type'=>'tribe_events');
-$pairs_array[] = $foo_pair;
-return $pairs_array;
+	$foo_pair = array('tax'=>'tribe_events_cat', 'type'=>'tribe_events');
+	$pairs_array[] = $foo_pair;
+	return $pairs_array;
 
 }
-
-
 
 // Reposition the breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
