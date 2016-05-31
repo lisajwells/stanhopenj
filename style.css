@@ -1089,6 +1089,22 @@ img.alignright,
     width: 100%;
 }
 
+#tribe-events-adv-list-widget-2 h2.tribe-events-title {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#tribe-events-adv-list-widget-2 h2.tribe-events-title a {
+  border-bottom: none;
+}
+
+#tribe-events-adv-list-widget-2 .tribe-events-duration {
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
 /*.sidebar-primary .tribe-mini-calendar-event .list-info h2,
 .sidebar-primary .tribe-mini-calendar-event .list-info h2 a {
   font-family: 'Open Sans Condensed', 'Lato', Helvetica, sans-serif;

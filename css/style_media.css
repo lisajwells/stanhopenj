@@ -75,8 +75,7 @@
 
 @media only screen and (max-width: 1340px) {
 
-  .site-inner,
-  /*.wrap*/ {
+  .site-inner {
     max-width: 1140px;
   }
 
@@ -86,7 +85,7 @@
     width: 920px;
   }
 
-  .content,
+  .content
   /*.site-header .widget-area*/ {
     width: 800px;
   }
