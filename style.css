@@ -1108,11 +1108,12 @@ img.alignright,
 }
 
 .tribe-events-event-image {
+  background-color: pink;
   display: block;
   width: 100%;
   position: relative;
   height: 0;
-  padding: 56.25% 0 0 0;
+  padding: 75% 0 0 0;
   overflow: hidden;
 }
 
