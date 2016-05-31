@@ -48,8 +48,10 @@ if ( isset( $posts ) && $posts ) :
 		<!-- Event  -->
 		<div class="<?php tribe_events_event_classes() ?>">
 
-			<!-- add the featured image -->
+			<!-- add the featured image / medium is 300 x 225 -->
 			<?php echo tribe_event_featured_image( null, 'medium' ); ?>
+
+			<?php echo tribe_get_event_taxonomy ( 'category' ); ?>
 
 			<?php tribe_get_template_part( 'pro/widgets/modules/single-event', null, $instance ) ?>
 		</div>
