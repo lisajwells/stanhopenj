@@ -1223,57 +1223,16 @@ img.alignright,
 
 /* Text Resizer */
 
-.tees {
-    background-color: #1b154b;
-    border: 2px solid #91ae3d;
-    color: #fff;
-    font-family: 'Lora', serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 8px 6px 6px 6px;
-    position: relative;
-    text-align: center;
-    width: 66px;
-    z-index: 101;
-}
-
-.tees a {
-  border: none;
-  color: #fff;
-  text-decoration: none;
-}
-
-.bigT {
-  font-size: 25px;
-}
-
 .content-sidebar-wrap[data-type-size="bigT"]{
   font-size: 24px;
-}
-
-.medT {
-  font-size: 19px;
 }
 
 .content-sidebar-wrap[data-type-size="medT"]{
   font-size: 21px;
 }
 
-.lilT {
-  font-size: 14px;
-}
-
 .content-sidebar-wrap[data-type-size="lilT"]{
   font-size: 18px;
-}
-
-a.bigT:hover, a.medT:hover, a.lilT:hover {
-  color: #91ae3d;
-}
-
-a.selected {
-  color: #91ae3d;
 }
 
 /* ## Genesis eNews Extended
