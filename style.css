@@ -75,6 +75,7 @@ font-family: 'Lora', serif;
 	- Entry Meta
 	- Pagination
 	- Comments
+  - Front Page
 - Sidebars
 - Footer Widgets
 - Site Footer
@@ -1054,7 +1055,8 @@ img.alignright,
   text-align: center;
 }
 
-#tribe-events-adv-list-widget-2 h3.widget-title {
+#tribe-events-adv-list-widget-2 h3.widget-title,
+.home main h3 {
   font-size: 33px;
   font-size: 3.3rem;
   font-weight: 700;
@@ -1573,6 +1575,17 @@ p.entry-meta {
 .entry-pings .reply {
 	display: none;
 }
+
+
+/* # Front Page
+
+---------------------------------------------------------------------------------------------------- */
+
+/* h3 style declared with upcoming events h3
+#tribe-events-adv-list-widget-2 h3.widget-title,
+.home main h3
+*/
+
 
 
 /* # Sidebars

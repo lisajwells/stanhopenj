@@ -26,13 +26,17 @@ function stanhopenj_add_upcoming() {
 }
 
 // Add our recent news loop
-add_action( 'genesis_loop', 'cd_goh_loop' );
-function cd_goh_loop() {
+remove_action( 'genesis_loop', 'genesis_do_loop' );
+add_action( 'genesis_loop', 'stanhopenj_news_loop' );
+function stanhopenj_news_loop() {
+
+    echo '<h3>Recent News</h3>';
+
     $args = array(
-        'category_name' => 'genesis-office-hours', // replace with your category slug
+        'category_name' => 'news',
         'orderby'       => 'post_date',
         'order'         => 'DESC',
-        'posts_per_page'=> '12', // overrides posts per page in theme settings
+        'posts_per_page'=> '2',
     );
     $loop = new WP_Query( $args );
     if( $loop->have_posts() ) {
