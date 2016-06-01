@@ -30,6 +30,7 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action( 'genesis_loop', 'stanhopenj_news_loop' );
 function stanhopenj_news_loop() {
 
+    echo '<div class="frontpage-news">';
     echo '<h3>Recent News</h3>';
 
     $args = array(
@@ -43,13 +44,16 @@ function stanhopenj_news_loop() {
         // loop through posts
         while( $loop->have_posts() ): $loop->the_post();
         echo '<div class="frontpage-news-item">';
-            echo '<h4>' . get_the_title() . '</h4>';
+            echo '<h4>' . get_the_title() . '</h4>'; //!!!!!wrap in link!!!!!!!!!
             echo '<p>' . get_the_excerpt() . '</p>';
-            // echo '<p><a href="' . $video_link . '" target="_blank">Watch It</a> | <a href="' . get_permalink() . '" target="_blank">Show Notes</a></p>';
+            echo '<a class="button small" href="' . get_permalink() . '" >Read More</a>';
         echo '</div>';
         endwhile;
     }
     wp_reset_postdata();
+
+        echo '</div>';
+
 }
 
 
