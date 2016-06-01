@@ -1105,6 +1105,10 @@ img.alignright,
   border-bottom: none;
 }
 
+#tribe-events-adv-list-widget-2 h2.tribe-events-title a:hover {
+  color: #4083ae;
+}
+
 #tribe-events-adv-list-widget-2 .tribe-events-duration {
   font-size: 13px;
   font-size: 1.3rem;
