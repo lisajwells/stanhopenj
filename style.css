@@ -975,7 +975,7 @@ img.alignright,
     font-size: 15px;
     font-size: 1.5rem;
     font-weight: 400;
-    height: 55px;
+    /*height: 55px; let it be from padding for 2-liner */
     margin: 0 0 12px 0;
     padding: 19px 10px;
     text-align: center;
@@ -1009,6 +1009,7 @@ img.alignright,
 #accordion-1 .accordion-content .acc-list-hed:first-child {
   margin-top: 0;
 }
+
 /**/
 
 .widget {
@@ -1093,8 +1094,8 @@ img.alignright,
 
 #tribe-events-adv-list-widget-2 .type-tribe_events {
   display:inline-block;
-  width: 26.666666%;
-  margin-right: 10%;
+  width: 28.666666%;
+  margin-right: 7%;
   float: left;
   border:none;
 }
