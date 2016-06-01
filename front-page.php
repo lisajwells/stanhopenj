@@ -45,7 +45,7 @@ function stanhopenj_news_loop() {
         echo '<div class="frontpage-news-item">';
             echo '<h4>' . get_the_title() . '</h4>';
             echo '<p>' . get_the_excerpt() . '</p>';
-            echo '<p><a href="' . $video_link . '" target="_blank">Watch It</a> | <a href="' . get_permalink() . '" target="_blank">Show Notes</a></p>';
+            // echo '<p><a href="' . $video_link . '" target="_blank">Watch It</a> | <a href="' . get_permalink() . '" target="_blank">Show Notes</a></p>';
         echo '</div>';
         endwhile;
     }
