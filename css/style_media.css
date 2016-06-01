@@ -187,6 +187,17 @@
     width: 100%;
   }
 
+  .sidebar-content .sidebar-primary {
+    clear: both;
+    float: none;
+    margin: 0 auto 40px;
+    padding-top: 40px;
+  }
+
+  .sidebar-primary #text-2 {
+    padding-bottom: 0;
+  }
+
   .site-header .wrap {
 /*    padding-left: 5%;
     padding-right: 5%;
