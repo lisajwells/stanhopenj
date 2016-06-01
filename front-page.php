@@ -44,7 +44,7 @@ function stanhopenj_news_loop() {
         // loop through posts
         while( $loop->have_posts() ): $loop->the_post();
         echo '<div class="frontpage-news-item">';
-            echo '<h4>' . get_the_title() . '</h4>'; //!!!!!wrap in link!!!!!!!!!
+            echo '<a href="' . get_permalink() . '"><h4>' . get_the_title() . '</h4></a>'; //!!!!!wrap in link!!!!!!!!!
             echo '<p>' . get_the_excerpt() . '</p>';
             echo '<a class="button small" href="' . get_permalink() . '" >Read More</a>';
         echo '</div>';
