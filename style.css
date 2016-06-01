@@ -986,6 +986,12 @@ img.alignright,
 .accordion-title.open {cursor: default;}
 .accordion-content {padding-bottom: 20px;}
 
+.accordion-content {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #f6f6f6;
+}
+
 /**/
 
 .widget {
