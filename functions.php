@@ -146,6 +146,7 @@ genesis_register_sidebar( array(
 
 //* Add Image Sizes
 add_image_size( 'featured-image', 720, 400, TRUE );
+add_image_size( 'events-home', 400, 300, true );
 
 //* Rename primary and secondary navigation menus
 add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
