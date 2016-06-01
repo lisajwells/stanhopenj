@@ -998,6 +998,17 @@ img.alignright,
     line-height: 1.3;
 }
 
+#accordion-1 .accordion-content p {
+    margin-bottom: 8px;
+}
+
+#accordion-1 .accordion-content .acc-list-hed {
+  font-weight: 700;
+  margin: 16px 0 3px;
+}
+#accordion-1 .accordion-content .acc-list-hed:first-child {
+  margin-top: 0;
+}
 /**/
 
 .widget {
