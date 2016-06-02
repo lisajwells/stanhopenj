@@ -1,9 +1,12 @@
+jQuery(function( $ ){
+
+
 //***** type-size experiment *****//
 //***** requires jquery.cookie.js *****//
   var storedTextSize = $.cookie('textSizeCookie');
 
   // set data-type-size attribute of parent to match attribute stored in cookie
-  $('.content-sidebar-wrap').attr('data-type-size', storedTextSize);
+  $('.entry-content').attr('data-type-size', storedTextSize);
 
   // MARK .SELECTED T
   // if no cookie has been set, lilT gets .selected class
@@ -20,10 +23,13 @@
     $.cookie('textSizeCookie', textSize, { expires: 9000, path: '/' } ); //days
 
     // change data-type-size attribute of parent to match attribute of clicked <a>
-    $('.content-sidebar-wrap').attr('data-type-size', textSize);
+    $('.entry-content').attr('data-type-size', textSize);
 
     // mark .selected T
     $('.tees a').removeClass('selected');
     $(this).addClass('selected');
   });
   //**//
+
+});
+

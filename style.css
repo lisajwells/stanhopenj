@@ -1195,15 +1195,15 @@ img.alignright,
 
 /* Text Resizer */
 
-.content-sidebar-wrap[data-type-size="bigT"]{
+.entry-content[data-type-size="bigT"]{
   font-size: 24px;
 }
 
-.content-sidebar-wrap[data-type-size="medT"]{
+.entry-content[data-type-size="medT"]{
   font-size: 21px;
 }
 
-.content-sidebar-wrap[data-type-size="lilT"]{
+.entry-content[data-type-size="lilT"]{
   font-size: 18px;
 }
 

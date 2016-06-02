@@ -48,10 +48,14 @@ function genesis_sample_enqueue_scripts_styles() {
 		'subMenu'  => __( 'Menu', 'genesis-sample' ),
 	);
 
-	//* type-size experiment *//
-	wp_enqueue_script( 'js-cookie', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.cookie.js', 'genesis-sample' );
-
+	//* type-sizer *//
 	wp_enqueue_script( 'stanhopenj-type-sizer', get_bloginfo( 'stylesheet_directory' ) . '/js/type-sizer.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'js-cookie', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.cookie.js', 'stanhopenj-type-sizer' );
+
+	//* from my working sample *//
+	// wp_enqueue_script( 'author-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0' );
+	// wp_enqueue_script( 'js-cookie', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.cookie.js', 'author-global' );
+
 
 	wp_localize_script( 'genesis-sample-responsive-menu', 'genesisSampleL10n', $output );
 
