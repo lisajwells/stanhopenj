@@ -47,6 +47,12 @@ function genesis_sample_enqueue_scripts_styles() {
 		'mainMenu' => __( 'Menu', 'genesis-sample' ),
 		'subMenu'  => __( 'Menu', 'genesis-sample' ),
 	);
+
+	//* type-size experiment *//
+	wp_enqueue_script( 'js-cookie', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.cookie.js', 'genesis-sample' );
+
+	wp_enqueue_script( 'stanhopenj-type-sizer', get_bloginfo( 'stylesheet_directory' ) . '/js/type-sizer.js', array( 'jquery' ), '1.0.0' );
+
 	wp_localize_script( 'genesis-sample-responsive-menu', 'genesisSampleL10n', $output );
 
 }

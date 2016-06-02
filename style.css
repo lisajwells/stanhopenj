@@ -809,7 +809,13 @@ th:first-child {
 }
 
 .breadcrumb-link-wrap a {
+  border-bottom: none;
 	color: #4083ae;
+  font-weight: 400;
+}
+
+.breadcrumb-link-wrap a:hover {
+  color: #2f2f82;
 }
 
 .after-entry,
