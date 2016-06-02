@@ -6,7 +6,7 @@ jQuery(function( $ ){
   var storedTextSize = $.cookie('textSizeCookie');
 
   // set data-type-size attribute of parent to match attribute stored in cookie
-  $('.entry-content').attr('data-type-size', storedTextSize);
+  $('.entry-content p').attr('data-type-size', storedTextSize);
 
   // MARK .SELECTED T
   // if no cookie has been set, lilT gets .selected class
@@ -23,7 +23,7 @@ jQuery(function( $ ){
     $.cookie('textSizeCookie', textSize, { expires: 9000, path: '/' } ); //days
 
     // change data-type-size attribute of parent to match attribute of clicked <a>
-    $('.entry-content').attr('data-type-size', textSize);
+    $('.entry-content p').attr('data-type-size', textSize);
 
     // mark .selected T
     $('.tees a').removeClass('selected');
