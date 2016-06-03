@@ -223,7 +223,7 @@ ul {
 }
 
 li {
-	list-style-type: none;
+	list-style-type: disc;
 }
 
 hr {
@@ -1188,16 +1188,19 @@ img.alignright,
 /* Text Resizer */
 
 .entry-content p[data-type-size="bigT"],
+.entry-content ul li[data-type-size="bigT"],
 .frontpage-news p[data-type-size="bigT"] {
   font-size: 22px;
 }
 
 .entry-content p[data-type-size="medT"],
+.entry-content ul li[data-type-size="medT"],
 .frontpage-news p[data-type-size="medT"] {
   font-size: 19px;
 }
 
 .entry-content p[data-type-size="lilT"],
+.entry-content ul li[data-type-size="lilT"],
 .frontpage-news p[data-type-size="lilT"] {
   font-size: 16px;
 }
@@ -1481,7 +1484,7 @@ img.alignright,
 }
 
 .entry-content ul > li {
-	list-style-type: none;
+	list-style-type: disc;
 }
 
 .entry-content ol ol,

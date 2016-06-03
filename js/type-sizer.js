@@ -7,6 +7,7 @@ jQuery(function( $ ){
 
     // set data-type-size attribute of <p> to match attribute stored in cookie
     $('.entry-content p').attr('data-type-size', storedTextSize);
+    $('.entry-content ul li').attr('data-type-size', storedTextSize);
     $('.frontpage-news p').attr('data-type-size', storedTextSize);
 
     // mark .selected T
@@ -25,6 +26,7 @@ jQuery(function( $ ){
 
       // change data-type-size attribute of <p> to match attribute of clicked <a>
       $('.entry-content p').attr('data-type-size', textSize);
+      $('.entry-content ul li').attr('data-type-size', textSize);
       $('.frontpage-news p').attr('data-type-size', textSize);
 
       // mark .selected T
