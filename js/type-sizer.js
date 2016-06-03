@@ -7,6 +7,7 @@ jQuery(function( $ ){
 
     // set data-type-size attribute of <p> to match attribute stored in cookie
     $('.entry-content p').attr('data-type-size', storedTextSize);
+    $('.frontpage-news p').attr('data-type-size', storedTextSize);
 
     // mark .selected T
     // if no cookie has been set, lilT gets .selected class
@@ -24,6 +25,7 @@ jQuery(function( $ ){
 
       // change data-type-size attribute of <p> to match attribute of clicked <a>
       $('.entry-content p').attr('data-type-size', textSize);
+      $('.frontpage-news p').attr('data-type-size', textSize);
 
       // mark .selected T
       $('.tees a').removeClass('selected');
