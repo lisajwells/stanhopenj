@@ -1187,15 +1187,18 @@ img.alignright,
 
 /* Text Resizer */
 
-.entry-content p[data-type-size="bigT"]{
+.entry-content p[data-type-size="bigT"],
+.frontpage-news p[data-type-size="bigT"] {
   font-size: 22px;
 }
 
-.entry-content p[data-type-size="medT"]{
+.entry-content p[data-type-size="medT"],
+.frontpage-news p[data-type-size="medT"] {
   font-size: 19px;
 }
 
-.entry-content p[data-type-size="lilT"]{
+.entry-content p[data-type-size="lilT"],
+.frontpage-news p[data-type-size="lilT"] {
   font-size: 16px;
 }
 
