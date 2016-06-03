@@ -1179,16 +1179,8 @@ img.alignright,
 
 #homepage-to-events-btn {
   clear: both;
-  display: block;
-  margin: 0 auto;
-  text-transform: none;
+  width: auto;
 }
-
-#homepage-to-events-btn span {
-  font-family: 'Lora', serif;
-  font-weight: 700;
-}
-
 
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
