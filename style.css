@@ -1388,6 +1388,7 @@ img.alignright,
 .site-title a:focus {
   border: none;
 	color: #fff;
+  font-weight: 400;
 	text-decoration: none;
 }
 
