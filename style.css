@@ -1664,6 +1664,7 @@ p.entry-meta {
   color: #fff;
   float: left;
   margin: 6px 30px 10px 0;
+max-width: 380px;
   padding: 30px;
   text-align: center;
 }

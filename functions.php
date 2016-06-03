@@ -41,7 +41,6 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style( 'stanhopenj-media-css', get_stylesheet_directory_uri() . '/css/style_media.css' );
 	wp_enqueue_style( 'stanhopenj-print-css', get_stylesheet_directory_uri() . '/css/style_print.css' );
 
-
 	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
 	$output = array(
 		'mainMenu' => __( 'Menu', 'genesis-sample' ),
@@ -55,7 +54,6 @@ function genesis_sample_enqueue_scripts_styles() {
 	//* from my working sample *//
 	// wp_enqueue_script( 'author-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0' );
 	// wp_enqueue_script( 'js-cookie', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.cookie.js', 'author-global' );
-
 
 	wp_localize_script( 'genesis-sample-responsive-menu', 'genesisSampleL10n', $output );
 
