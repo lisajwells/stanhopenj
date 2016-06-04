@@ -52,13 +52,7 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_script( 'stanhopenj-type-sizer', get_bloginfo( 'stylesheet_directory' ) . '/js/type-sizer.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'js-cookie', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.cookie.js', 'stanhopenj-type-sizer' );
 
-	//* from my working sample *//
-	// wp_enqueue_script( 'author-global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0' );
-	// wp_enqueue_script( 'js-cookie', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.cookie.js', 'author-global' );
-
-
 	wp_localize_script( 'genesis-sample-responsive-menu', 'genesisSampleL10n', $output );
-
 }
 
 //* Add HTML5 markup structure
@@ -75,6 +69,14 @@ add_filter( 'genesis_search_text', 'stanhopnj_search_button_text' );
 function stanhopnj_search_button_text( $text ) {
     return "I'm looking for...";
 }
+
+// Customize the post info function
+add_filter( 'genesis_post_info', 'sp_post_info_filter' );
+function sp_post_info_filter($post_info) {
+if ( !is_page() ) {
+	$post_info = '[post_date]';
+	return $post_info;
+}}
 
 // Add Gradient over header image for readability
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
