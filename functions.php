@@ -127,6 +127,10 @@ function foo_conditional_widget_type_tax_pairs( $pairs_array ) {
 
 }
 
+
+// Remove style sheet from Visual Form Builder
+add_filter( 'visual-form-builder-css', '__return_false' );
+
 // Reposition the breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );

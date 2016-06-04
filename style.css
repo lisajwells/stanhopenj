@@ -434,18 +434,19 @@ input,
 select,
 textarea {
 	background-color: #fff;
-	border: 1px solid #ddd;
+	border: 1px solid #333;
 	color: #1b154b;
 	font-size: 18px;
 	font-size: 1.8rem;
 	font-weight: 400;
 	padding: 16px;
 	width: 100%;
+	margin-bottom:15px;
 }
 
 input:focus,
 textarea:focus {
-	border: 1px solid #999;
+	border: 1px solid #000;
 	outline: none;
 }
 
@@ -546,6 +547,14 @@ input[type="search"]::-webkit-search-results-button {
 	display: none;
 }
 
+.vfb-fieldset {
+	border:0px #fff solid;
+}
+.entry-content ol, 
+.entry-content ul {
+	margin-left:0px !important;
+	}
+
 /* ## Tables
 --------------------------------------------- */
 
@@ -638,7 +647,7 @@ th:first-child {
 
 .site-inner {
 	clear: both;
-	padding-top: 40px;
+	padding-top: 0px;
 	word-wrap: break-word;
 }
 
@@ -670,7 +679,7 @@ th:first-child {
 
 .content {
 	float: right;
-  padding: 40px 0 0 0;
+  padding: 0;
   width: 68%;
   max-width: 880px;
 }
@@ -825,7 +834,7 @@ th:first-child {
 	font-size: 18px;
 	font-size: 1.8rem;
 	margin-bottom: 40px;
-	padding: 60px;
+	padding: 0px;
 }
 
 .archive-description p:last-child,
@@ -874,8 +883,7 @@ th:first-child {
 .archive-description .entry-title,
 .archive-title,
 .author-box-title {
-	font-size: 20px;
-	font-size: 2rem;
+	font-size: 36px;
 }
 
 .entry-title {
@@ -989,8 +997,7 @@ img.alignright,
     color: #fff;
     cursor: pointer;
     font-family: 'Lora', serif;
-    font-size: 15px;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 400;
     /*height: 55px; let it be from padding for 2-liner */
     margin: 0 0 12px 0;
@@ -1111,8 +1118,8 @@ img.alignright,
 
 #tribe-events-adv-list-widget-2 .type-tribe_events {
   display:inline-block;
-  width: 28.666666%;
-  margin-right: 7%;
+ width: 31%;
+margin-right: 3%;
   float: left;
   border:none;
 }
@@ -1444,17 +1451,20 @@ img.alignright,
 
 .alert-box {
   background-color: #fff;
-  border: 1px solid red;
-  color: red;
-  margin: 0 0 40px 0;
+  border: 4px solid red;
+  margin: 40px 0 40px 0;
   padding: 10px;
+  font-size:20px;
 }
 
 .alert-box .widget {
   margin-bottom: 0;
 }
 
-
+.alert-box .widget-title {
+  text-align: center;
+  color: red;
+} 
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 /* !!!!!!! see style_navigation.css for all navigation !!!!!! */
@@ -1629,8 +1639,10 @@ p.entry-meta {
 */
 
 .frontpage-news {
-  margin-top: 40px;
+  margin: 20px 0px 60px 0px;
+  padding-top:60px;
   text-align: center;
+  border-top:1px solid #000;
 }
 
 .frontpage-news p {
@@ -1653,16 +1665,20 @@ p.entry-meta {
 .frontpage-news a.button {
   margin-top: -22px;
 }
+.upcoming-events {
+  padding-top:40px;
+	}
 
 /* # Members Box
 ---------------------------------------------------------------------------------------------------- */
 
 .members-box {
-  background-color: #2f2f82;
+  background-color: #fff;
   border-radius: 18px;
-  color: #fff;
+  border:2px solid #1B154B;
+  color: #1B154B;
   float: left;
-  margin: 6px 30px 10px 0;
+  margin: 6px 40px 10px 0;
   max-width: 380px;
   padding: 30px;
   text-align: center;
@@ -1690,13 +1706,11 @@ p.entry-meta {
 }
 
 .sidebar .widget {
-	background-color: #fff;
   padding: 40px 0 40px 0;
 }
 .sidebar .widget_nav_menu {
   padding: 40px 0 0 0;
 }
-
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
