@@ -125,7 +125,7 @@
       margin: 0;
       padding: 6px 4px 4px 4px;
       width: 56px;
-      z-index: 100;
+      /*z-index: 100;*/
   }
 
   #ubermenu-main-2-primary .tees a {
