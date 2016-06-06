@@ -205,6 +205,22 @@ a.selected {
     padding-bottom: 0;
 }
 
+#nav_menu-2 {
+  background-color: #0b4d26;
+}
+#nav_menu-3 {
+  background-color: #4083ae;
+}
+#nav_menu-4 {
+  background-color: #2f2f82;
+}
+#nav_menu-7 {
+  background-color: #1b154b;
+}
+#nav_menu-10 {
+  background-color: #91ae3d;
+}
+
 /* ## Footer Navigation
 --------------------------------------------- */
 
