@@ -78,6 +78,13 @@ if ( !is_page() ) {
 	return $post_info;
 }}
 
+// Add Read More Link to Excerpts
+add_filter('excerpt_more', 'get_read_more_link');
+add_filter( 'the_content_more_link', 'get_read_more_link' );
+function get_read_more_link() {
+   return '...&nbsp;<a href="' . get_permalink() . '">[Read&nbsp;More]</a>';
+}
+
 // Add Gradient over header image for readability
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
 add_action( 'genesis_header', 'stanhopenj_header_markup_open', 5 );
