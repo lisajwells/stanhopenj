@@ -162,10 +162,10 @@ a.selected {
 /* ## Sidebar Navigation
 --------------------------------------------- */
 .sidebar .widget_nav_menu {
-  padding:25px;
-	 background-color:#1B154B;
-	padding-bottom:40px;
+  padding: 28px 24px 20px 24px;
+	background-color:#1B154B;
 }
+
 .widget_nav_menu {
   font-size: 16px;
   font-size: 1.6rem;
@@ -176,9 +176,8 @@ a.selected {
 }
 
 .widget_nav_menu a {
-      display: inline-block;
-      margin-bottom: 10px;
-      padding-bottom: 2px;
+    display: inline-block;
+    margin-bottom: 12px;
     border-bottom: 0px;
     color: #fff;
 }
