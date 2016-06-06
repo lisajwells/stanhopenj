@@ -1335,9 +1335,11 @@ margin-right: 3%;
 .search-form:before {
     content: "\f179";
     font-family: 'dashicons';
-    left: -46px;
+    font-size: 24px;
+    font-size: 2.4rem;
+    left: -40px;
     position: absolute;
-    top: 9px;
+    top: 5px;
 }
 
 .search-form input {
