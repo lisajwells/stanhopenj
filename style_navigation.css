@@ -183,10 +183,11 @@ a.selected {
 }
 
 .side-menu-parent > a:first-child {
+    border: none;
     font-family: 'Lora', serif;
     font-size: 22px;
     font-size: 2.2rem;
-    border: none;
+    margin-bottom: 18px;
 }
 
 .side-menu-parent > a:first-child:hover {
