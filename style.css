@@ -550,7 +550,7 @@ input[type="search"]::-webkit-search-results-button {
 .vfb-fieldset {
 	border:0px #fff solid;
 }
-.entry-content ol, 
+.entry-content ol,
 .entry-content ul {
 	margin-left:0px !important;
 	}
@@ -647,6 +647,7 @@ th:first-child {
 
 .site-inner {
 	clear: both;
+  margin-top: 20px;
 	padding-top: 0px;
 	word-wrap: break-word;
 }
@@ -681,6 +682,7 @@ th:first-child {
 	float: right;
   padding: 0;
   width: 68%;
+  margin-top: -8px;
   max-width: 880px;
 }
 
@@ -1464,7 +1466,7 @@ margin-right: 3%;
 .alert-box .widget-title {
   text-align: center;
   color: red;
-} 
+}
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 /* !!!!!!! see style_navigation.css for all navigation !!!!!! */
