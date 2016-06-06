@@ -182,6 +182,10 @@ a.selected {
     color: #fff;
 }
 
+.widget_nav_menu a:hover {
+  color: #8dbbc9;
+}
+
 .side-menu-parent > a:first-child {
     border: none;
     font-family: 'Lora', serif;
