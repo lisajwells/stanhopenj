@@ -444,6 +444,11 @@
     height: 30px;
   }
 
+  .search-form:before {
+    left: 6px;
+    top: 12px;
+  }
+
   .site-header .widget-area {
     bottom: -105px;
     margin: 0 auto;
@@ -451,6 +456,10 @@
     right: 0;
     width: 262px;
     float: none;
+  }
+
+  .upcoming-events {
+      margin-top: 20px;
   }
 
   .home .site-header .widget-area {
