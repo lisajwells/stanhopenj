@@ -205,19 +205,23 @@ a.selected {
     padding-bottom: 0;
 }
 
-#nav_menu-2 {
+#nav_menu-2 { /* about stanhope */
   background-color: #0b4d26;
 }
-#nav_menu-3 {
+#nav_menu-3 { /* resources */
   background-color: #4083ae;
 }
-#nav_menu-4 {
+#nav_menu-4,  /* departments and services */
+#nav_menu-5,  /* municipal */
+#nav_menu-6 { /* emergency */
   background-color: #2f2f82;
 }
-#nav_menu-7 {
+#nav_menu-7,  /* government */
+#nav_menu-8,  /* boards */
+#nav_menu-9 { /* financial */
   background-color: #1b154b;
 }
-#nav_menu-10 {
+#nav_menu-10 { /* community and recreation */
   background-color: #91ae3d;
 }
 
