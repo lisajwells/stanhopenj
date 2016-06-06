@@ -209,12 +209,12 @@
   }
 
   .site-header .widget-area {
-      text-align: right;
+      /*text-align: right;*/
       width: 300px;
       right: 30px;
-      top: auto;
-      transform: translateY(0%);
-      bottom: -65px;
+      /*top: auto;*/
+      transform: translateY(14%);
+      /*bottom: -65px;*/
   }
 
   .title-area {
@@ -231,8 +231,8 @@
   }
 
   .search-form:before {
-      left: 10px;
-      top: 21px;
+      left: 6px;
+      top: 18px;
   }
 
   .genesis-nav-menu li,
