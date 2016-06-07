@@ -239,6 +239,8 @@
       top: 18px;
   }
 
+  /*** NAV ***/
+
   .genesis-nav-menu li,
   .header-image .title-area,
   .site-header ul.genesis-nav-menu {
@@ -387,6 +389,8 @@
     color: #c3251d;
   }
 
+  /******/
+
   #genesis-footer-widgets .footer-widgets-1 {
     border-right: none;
     padding-right: 0;
@@ -407,10 +411,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-/*  .site-header .widget-area {
-    bottom: -140px;
-  }
-*/  .home .site-header .widget-area {
+  .home .site-header .widget-area {
     bottom: -162px;
   }
 
