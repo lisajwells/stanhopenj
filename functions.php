@@ -81,6 +81,19 @@ if ( !is_page() ) {
 	return $post_info;
 }}
 
+add_action( 'genesis_before', 'child_conditional_actions' );
+function child_conditional_actions() {
+    if( is_archive() && 'post_type' == get_post_type() ) {
+        //put your actions here
+        remove_action( 'genesis_post_content', 'genesis_do_post_content' );
+        remove_action( 'genesis_post_content', 'genesis_do_post_image' );
+        add_action( 'genesis_post_content', 'the_content' );
+
+    }
+
+}
+
+
 // Add Read More Link to Excerpts
 add_filter('excerpt_more', 'get_read_more_link');
 add_filter( 'the_content_more_link', 'get_read_more_link' );
@@ -113,19 +126,6 @@ function stanhopenj_header_markup_open() {
 	genesis_structural_wrap( 'header' );
 }
 
-//* type-size experiment *// THIS WHOLE THING MOVED TO UBER MENU
-// add_action ( 'genesis_before_header', 'stanhopenj_add_text_size', 5 );
-function stanhopenj_add_text_size() {
-    ?>
-    <p class="tees">
-        <a href="javascript:;" data-type-size="bigT" class="bigT">T</a>
-        <a href="javascript:;" data-type-size="medT" class="medT">T</a>
-        <a href="javascript:;" data-type-size="lilT" class="lilT">T</a>
-    </p>
-
-    <?php
-}
-
 // Add Conditional Widgets support (UI & Logic) for post type 'tribe_events' and taxonomy 'category'
 
 // 'tribe_events_cat' => 'featured'
@@ -138,7 +138,6 @@ function foo_conditional_widget_type_tax_pairs( $pairs_array ) {
 	return $pairs_array;
 
 }
-
 
 // Remove style sheet from Visual Form Builder
 add_filter( 'visual-form-builder-css', '__return_false' );
@@ -192,7 +191,7 @@ add_action( 'genesis_before_header', 'genesis_do_nav' );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
 
-//* Reduce the secondary navigation menu to one level depth
+//* The secondary navigation menu depth
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 function genesis_sample_secondary_menu_args( $args ) {
 
