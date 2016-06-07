@@ -26,7 +26,7 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-  color: #c3251d;
+  color: #2A6284;
   text-decoration: underline;
 }
 
@@ -120,7 +120,7 @@
 
 .tees {
     background-color: #1b154b;
-    border: 2px solid #91ae3d;
+    border: 2px solid #2A6284;
     color: #fff;
     font-family: 'Lora', serif;
     font-weight: bold;
@@ -152,11 +152,11 @@
 }
 
 a.bigT:hover, a.medT:hover, a.lilT:hover {
-  color: #91ae3d;
+  color: #2A6284;
 }
 
 a.selected {
-  color: #91ae3d;
+  color: #2A6284;
 }
 
 /* ## Sidebar Navigation
@@ -206,15 +206,15 @@ a.selected {
 }
 
 #nav_menu-2 { /* about stanhope */
-  background-color: #0b4d26;
+  background-color: #1E5935;
 }
 #nav_menu-3 { /* resources */
-  background-color: #4083ae;
+  background-color: #2A6284;
 }
 #nav_menu-4,  /* departments and services */
 #nav_menu-5,  /* municipal */
 #nav_menu-6 { /* emergency */
-  background-color: #2f2f82;
+  background-color: #30306B;
 }
 #nav_menu-7,  /* government */
 #nav_menu-8,  /* boards */
@@ -222,7 +222,7 @@ a.selected {
   background-color: #1b154b;
 }
 #nav_menu-10 { /* community and recreation */
-  background-color: #91ae3d;
+  background-color: #303A18;
 }
 
 /* ## Footer Navigation
