@@ -407,10 +407,10 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .site-header .widget-area {
+/*  .site-header .widget-area {
     bottom: -140px;
   }
-  .home .site-header .widget-area {
+*/  .home .site-header .widget-area {
     bottom: -162px;
   }
 
