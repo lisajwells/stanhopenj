@@ -70,7 +70,7 @@ function stanhopnj_search_button_text( $text ) {
     return "I'm looking for...";
 }
 
-//* Remove the edit link
+// Remove the edit link
 add_filter ( 'genesis_edit_post_link' , '__return_false' );
 
 // Customize the post info function
@@ -85,7 +85,7 @@ if ( !is_page() ) {
 add_filter('excerpt_more', 'get_read_more_link');
 add_filter( 'the_content_more_link', 'get_read_more_link' );
 function get_read_more_link() {
-   return '...&nbsp;<a href="' . get_permalink() . '">[Read&nbsp;More]</a>';
+   return '...</p><a class="button small" href="' . get_permalink() . '" >Read More</a>';
 }
 
 // Add Gradient over header image for readability
