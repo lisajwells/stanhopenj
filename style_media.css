@@ -34,7 +34,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 860px) {
   .home .site-header,
   .home-header-ghost {
     height: 174px;
@@ -76,7 +76,7 @@
 @media only screen and (max-width: 1340px) {
 
   .site-inner {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 1140px;
   }
 
@@ -209,12 +209,16 @@
   }
 
   .site-header .widget-area {
-      /*text-align: right;*/
-      width: 300px;
-      right: 30px;
-      /*top: auto;*/
-      transform: translateY(14%);
-      /*bottom: -65px;*/
+    bottom: -162px;
+    margin: 0 auto;
+    position: relative;
+    right: 0;
+    width: 262px;
+    float: none;
+  }
+
+  .breadcrumb {
+    margin-top: 73px;
   }
 
   .title-area {
@@ -400,9 +404,18 @@
     width: 30%;
   }
 
+}
 
+@media only screen and (max-width: 900px) {
+  .site-header .widget-area {
+    bottom: -140px;
+  }
+  .home .site-header .widget-area {
+    bottom: -162px;
+  }
 
 }
+
 
 @media only screen and (max-width: 860px) {
 
@@ -449,21 +462,24 @@
     top: 12px;
   }
 
-  .site-header .widget-area {
+  /*.site-header .widget-area {
     bottom: -105px;
     margin: 0 auto;
     position: relative;
     right: 0;
     width: 262px;
     float: none;
+  }*/
+
+  .site-header .widget-area {
+    bottom: -155px;
+  }
+  .home .site-header .widget-area {
+    bottom: -215px;
   }
 
   .upcoming-events {
       margin-top: 20px;
-  }
-
-  .home .site-header .widget-area {
-    bottom: -165px;
   }
 
   .after-entry,

@@ -70,6 +70,9 @@ function stanhopnj_search_button_text( $text ) {
     return "I'm looking for...";
 }
 
+//* Remove the edit link
+add_filter ( 'genesis_edit_post_link' , '__return_false' );
+
 // Customize the post info function
 add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 function sp_post_info_filter($post_info) {
