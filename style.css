@@ -1196,8 +1196,12 @@ margin-right: 3%;
   width: 100%;
   position: relative;
   height: 0;
-  padding: 75% 0 0 0;
   overflow: hidden;
+}
+
+.home .tribe-events-event-image {
+  padding: 75% 0 0 0;
+
 }
 
 .tribe-events-event-image img {
