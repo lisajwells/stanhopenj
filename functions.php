@@ -85,26 +85,12 @@ if ( !is_page() ) {
 add_action( 'genesis_before', 'child_conditional_actions' );
 function child_conditional_actions() {
     if( is_post_type_archive('tribe_events') ) {
-        //put your actions here
+
         remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
         remove_action( 'genesis_entry_content', 'genesis_do_post_image' );
         add_action( 'genesis_entry_content', 'the_content' );
-        echo 'im a tribe event archive';
-
     }
-
 }
-// Just to test whether I've got the target
-// add_action( 'genesis_before_content', 'child_conditional_test' );
-// function child_conditional_test() {
-//     if( is_post_type_archive('tribe_events') ) {
-//         //put your actions here
-//         echo 'im a tribe event archive';
-
-//     }
-
-// }
-
 
 // Add Read More Link to Excerpts
 add_filter('excerpt_more', 'get_read_more_link');
