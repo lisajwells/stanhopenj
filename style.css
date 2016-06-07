@@ -14,12 +14,12 @@
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*
-darkgreen: #0b4d26;
-midnightblue (aka navy): #1b154b;
-darkblue (aka indigo): #2f2f82;
-lime: #91ae3d;
-dodgerblue: #2A6284;
-lightskyblue: #8dbbc9;
+darkgreen: #1E5935
+steelblue: #2A6284;
+darkblue : #30306A;
+midnightblue: #1b154b;
+darkolivegreen: #303A18;
+lightblue: #8dbbc9;
 
 font-family: 'Lato', sans-serif;
   normal 400 and bold 700
@@ -200,7 +200,7 @@ textarea:focus,
 }
 
 a {
-  border-bottom: 2px solid #91ae3d;
+  border-bottom: 2px solid #303A18;
   color: #1b154b;
   font-weight: 700;
   text-decoration: none;
@@ -838,7 +838,7 @@ th:first-child {
 }
 
 .breadcrumb-link-wrap a:hover {
-  color: #2f2f82;
+  color: #30306A;
 }
 
 .after-entry,
@@ -1821,7 +1821,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30306b', end
 
 .site-footer .nav-secondary nav {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#262262+0,2e3192+100 */
-  background: #2f2f82; /* Old browsers */
+  background: #30306A; /* Old browsers */
   background: -moz-linear-gradient(left,  rgba(38,34,98,1) 0%, rgba(46,49,146,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  rgba(38,34,98,1) 0%,rgba(46,49,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
