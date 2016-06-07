@@ -81,13 +81,25 @@ if ( !is_page() ) {
 	return $post_info;
 }}
 
+// Events category archives should have content instead of excerpt
 add_action( 'genesis_before', 'child_conditional_actions' );
 function child_conditional_actions() {
-    if( is_archive() && 'post_type' == get_post_type('tribe_events') ) {
+    if( is_post_type_archive('tribe_events') ) {
         //put your actions here
         remove_action( 'genesis_post_content', 'genesis_do_post_content' );
         remove_action( 'genesis_post_content', 'genesis_do_post_image' );
         add_action( 'genesis_post_content', 'the_content' );
+        echo 'im a tribe event archive';
+
+    }
+
+}
+// Just to test whether I've got the target
+add_action( 'genesis_before_content', 'child_conditional_test' );
+function child_conditional_test() {
+    if( is_post_type_archive('tribe_events') ) {
+        //put your actions here
+        echo 'im a tribe event archive';
 
     }
 
@@ -127,16 +139,13 @@ function stanhopenj_header_markup_open() {
 }
 
 // Add Conditional Widgets support (UI & Logic) for post type 'tribe_events' and taxonomy 'category'
-
 // example: 'tribe_events_cat' => 'featured'
-add_filter('conditional_widgets_type_tax_pairs', 'foo_conditional_widget_type_tax_pairs' );
-
+add_filter('conditional_widgets_type_tax_pairs', 'stanhopenj_conditional_widget_type_tax_pairs' );
 function stanhopenj_conditional_widget_type_tax_pairs( $pairs_array ) {
 
 	$stanhopenj_pair = array('tax'=>'tribe_events_cat', 'type'=>'tribe_events');
 	$pairs_array[] = $stanhopenj_pair;
 	return $pairs_array;
-
 }
 
 // Remove style sheet from Visual Form Builder
