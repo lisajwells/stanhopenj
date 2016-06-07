@@ -1338,7 +1338,9 @@ margin-right: 3%;
     position: absolute;
     text-align: center;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 60%;
     z-index: 99;
 }
@@ -1467,7 +1469,9 @@ margin-right: 3%;
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .alert-box {
