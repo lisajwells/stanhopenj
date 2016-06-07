@@ -83,7 +83,7 @@ if ( !is_page() ) {
 
 add_action( 'genesis_before', 'child_conditional_actions' );
 function child_conditional_actions() {
-    if( is_archive() && 'post_type' == get_post_type() ) {
+    if( is_archive() && 'post_type' == get_post_type('tribe_events') ) {
         //put your actions here
         remove_action( 'genesis_post_content', 'genesis_do_post_content' );
         remove_action( 'genesis_post_content', 'genesis_do_post_image' );
@@ -128,13 +128,13 @@ function stanhopenj_header_markup_open() {
 
 // Add Conditional Widgets support (UI & Logic) for post type 'tribe_events' and taxonomy 'category'
 
-// 'tribe_events_cat' => 'featured'
+// example: 'tribe_events_cat' => 'featured'
 add_filter('conditional_widgets_type_tax_pairs', 'foo_conditional_widget_type_tax_pairs' );
 
-function foo_conditional_widget_type_tax_pairs( $pairs_array ) {
+function stanhopenj_conditional_widget_type_tax_pairs( $pairs_array ) {
 
-	$foo_pair = array('tax'=>'tribe_events_cat', 'type'=>'tribe_events');
-	$pairs_array[] = $foo_pair;
+	$stanhopenj_pair = array('tax'=>'tribe_events_cat', 'type'=>'tribe_events');
+	$pairs_array[] = $stanhopenj_pair;
 	return $pairs_array;
 
 }
