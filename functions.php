@@ -139,52 +139,12 @@ add_filter( 'visual-form-builder-css', '__return_false' );
 
 
 // Add Events CPT to breadcrumbs
-remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
-add_action( 'genesis_after_header', 'stanhopenj_do_breadcrumbs' );
-
-function stanhopenj_do_breadcrumbs() {
-
-	if (
-		( ( 'posts' === get_option( 'show_on_front' ) && is_home() ) && ! genesis_get_option( 'breadcrumb_home' ) ) ||
-		( ( 'page' === get_option( 'show_on_front' ) && is_front_page() ) && ! genesis_get_option( 'breadcrumb_front_page' ) ) ||
-		( ( 'page' === get_option( 'show_on_front' ) && is_home() ) && ! genesis_get_option( 'breadcrumb_posts_page' ) ) ||
-		( is_single() && ! genesis_get_option( 'breadcrumb_single' ) ) ||
-		( is_page() && ! genesis_get_option( 'breadcrumb_page' ) ) ||
-		( ( is_archive() || is_search() ) && ! genesis_get_option( 'breadcrumb_archive' ) ) ||
-/*nope*/( is_post_type_archive('tribe_events') && ! genesis_get_option( 'breadcrumb_archive' ) ) ||
-		( is_404() && ! genesis_get_option( 'breadcrumb_404' ) ) ||
-		( is_attachment() && ! genesis_get_option( 'breadcrumb_attachment' ) )
-	)
-		return;
-
-	$breadcrumb_markup_open = sprintf( '<div %s>', genesis_attr( 'breadcrumb' ) );
-
-	if ( function_exists( 'bcn_display' ) ) {
-		echo $breadcrumb_markup_open;
-		bcn_display();
-		echo '</div>';
-	}
-	elseif ( function_exists( 'breadcrumbs' ) ) {
-		breadcrumbs();
-	}
-	elseif ( function_exists( 'crumbs' ) ) {
-		crumbs();
-	}
-	elseif ( class_exists( 'WPSEO_Breadcrumbs' ) && genesis_get_option( 'breadcrumbs-enable', 'wpseo_internallinks' ) ) {
-		yoast_breadcrumb( $breadcrumb_markup_open, '</div>' );
-	}
-	elseif( function_exists( 'yoast_breadcrumb' ) && ! class_exists( 'WPSEO_Breadcrumbs' ) ) {
-		yoast_breadcrumb( $breadcrumb_markup_open, '</div>' );
-	}
-	else {
-		genesis_breadcrumb();
-	}
-
-}
+	// if ( is_post_type_archive('tribe_events')) {echo 'eventssssss';}
+	/*triggers all events and category archives, too*/
 
 // Reposition the breadcrumbs
-// remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
-// add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
+remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 
 //* Add support for custom background
 add_theme_support( 'custom-background' );
