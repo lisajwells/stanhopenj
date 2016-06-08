@@ -1,0 +1,255 @@
+.genesis-nav-menu {
+  clear: both;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  width: 100%;
+}
+
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.genesis-nav-menu a {
+  color: #1b154b;
+  text-decoration: none;
+  display: block;
+  padding: 32px 20px;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+  color: #2A6284;
+  text-decoration: underline;
+}
+
+.genesis-nav-menu .sub-menu {
+  border-top: 1px solid #eee;
+  left: -9999px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition:    opacity .4s ease-in-out;
+  -ms-transition:     opacity .4s ease-in-out;
+  -o-transition:      opacity .4s ease-in-out;
+  transition:         opacity .4s ease-in-out;
+  width: 200px;
+  z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-top: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 20px;
+  position: relative;
+  width: 200px;
+  word-wrap: break-word;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -56px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+  position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+  opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+  padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+  padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+  float: right;
+}
+
+/* ## Accessible Menu
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+  position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.sfHover > ul.sub-menu {
+  left: auto;
+  opacity: 1;
+}
+
+.sub-menu-toggle,
+.menu-toggle {
+  display: none;
+  visibility: hidden;
+}
+
+/* ## Site Header Navigation
+--------------------------------------------- */
+
+.site-header .genesis-nav-menu li li {
+  margin-left: 0;
+}
+
+/* ## After Header Navigation
+--------------------------------------------- */
+
+.nav-primary {
+  background-color: #fff;
+}
+
+#ubermenu-main-2-primary {
+  z-index: 101;
+}
+
+.tees {
+    background-color: #1b154b;
+    border: 2px solid #2A6284;
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px 4px 2px 5px;
+    position: relative;
+    text-align: center;
+    width: 66px;
+    z-index: 5;
+}
+
+.tees a {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.bigT {
+  font-size: 25px;
+}
+
+.medT {
+  font-size: 19px;
+}
+
+.lilT {
+  font-size: 14px;
+}
+
+a.bigT:hover, a.medT:hover, a.lilT:hover {
+  color: #2A6284;
+}
+
+a.selected {
+  color: #2A6284;
+}
+
+/* ## Sidebar Navigation
+--------------------------------------------- */
+.sidebar .widget_nav_menu {
+  padding: 28px 24px 20px 24px;
+	background-color:#1B154B;
+}
+
+.widget_nav_menu {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+}
+
+.widget_nav_menu a {
+    display: inline-block;
+    margin-bottom: 12px;
+    border-bottom: 0px;
+    color: #fff;
+}
+
+.widget_nav_menu a:hover {
+  color: #8dbbc9;
+}
+
+.side-menu-parent > a:first-child {
+    border: none;
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+}
+
+.side-menu-parent > a:first-child:hover {
+  color: #8dbbc9;
+}
+
+.widget_nav_menu ul > li,
+.widget_nav_menu ul > li:last-of-type,
+.widget_nav_menu ul > li li {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+#nav_menu-2 { /* about stanhope */
+  background-color: #1E5935;
+}
+#nav_menu-3 { /* resources */
+  background-color: #2A6284;
+}
+#nav_menu-4,  /* departments and services */
+#nav_menu-5,  /* municipal */
+#nav_menu-6 { /* emergency */
+  background-color: #30306B;
+}
+#nav_menu-7,  /* government */
+#nav_menu-8,  /* boards */
+#nav_menu-9 { /* financial */
+  background-color: #1b154b;
+}
+#nav_menu-10 { /* community and recreation */
+  background-color: #303A18;
+}
+
+/* ## Footer Navigation
+--------------------------------------------- */
+
+.site-footer .genesis-nav-menu {
+  padding-bottom: 20px;
+}
+
+.site-footer .genesis-nav-menu a {
+  padding: 0 20px 10px;
+}
+
+#genesis-footer-widgets .widget_nav_menu {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.footer-menu-parent > a:first-child {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border: none;
+}
+
+#genesis-footer-widgets a:hover {
+  color: #8dbbc9;
+}
