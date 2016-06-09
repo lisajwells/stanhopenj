@@ -137,11 +137,6 @@ function stanhopenj_conditional_widget_type_tax_pairs( $pairs_array ) {
 // Remove style sheet from Visual Form Builder
 add_filter( 'visual-form-builder-css', '__return_false' );
 
-
-// Add Events CPT to breadcrumbs
-	// if ( is_post_type_archive('tribe_events')) {echo 'eventssssss';}
-	/*triggers all events and category archives, too*/
-
 // Reposition the breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
