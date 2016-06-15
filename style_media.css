@@ -505,7 +505,8 @@
     margin-bottom: 5%;
   }
 
-  #tribe-events-adv-list-widget-2 .type-tribe_events {
+  #tribe-events-adv-list-widget-2 .type-tribe_events,
+  #tribe-events-adv-list-widget-2 .type-tribe_events:last-of-type {
     width: 100%;
     max-width: 340px;
     margin: 0 auto;
