@@ -162,8 +162,9 @@ a.selected {
 /* ## Sidebar Navigation
 --------------------------------------------- */
 .sidebar .widget_nav_menu {
-  padding: 28px 24px 20px 24px;
 	background-color:#1B154B;
+  margin-bottom: 40px;
+  padding: 28px 24px 20px 24px;
 }
 
 .widget_nav_menu {

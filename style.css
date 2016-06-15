@@ -676,7 +676,7 @@ th:first-child {
 
 .site-inner {
 	clear: both;
-  margin-top: 20px;
+  margin-top: 40px;
 	padding-top: 0px;
 	word-wrap: break-word;
 }
@@ -849,9 +849,8 @@ th:first-child {
   color: #2A6284;
   font-size: 1.4rem;
   font-size: 14px;
-  margin-bottom: 1px;
-  margin-top: 32px;
-  padding: 12px 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumb-link-wrap a {
@@ -1360,6 +1359,7 @@ img.alignright,
   background: url("images/header-waterfall.jpg") center;
   background-size: cover;
   height: 190px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -1741,8 +1741,8 @@ p.entry-meta {
   margin-top: -22px;
 }
 .upcoming-events {
-  padding-top:40px;
-	}
+  /*padding-top:40px;*/
+}
 
 /* # Members Box
 ---------------------------------------------------------------------------------------------------- */
@@ -1781,7 +1781,7 @@ p.entry-meta {
 }
 
 .sidebar .widget {
-  padding: 40px 0 0px 0;
+  padding: 0;
 }
 .sidebar .widget_nav_menu {
   padding: 40px 0 0 0;
