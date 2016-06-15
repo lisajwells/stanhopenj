@@ -1,3 +1,63 @@
+classes for /events
+
+admin-bar
+archive
+events-archive
+events-gridview
+logged-in
+no-customize-support
+page-template-page-php
+post-type-archive
+post-type-archive-tribe_events
+sidebar-content
+singular
+tribe-events-style-full
+tribe-events-style-theme
+tribe-events-uses-geolocation
+tribe-filter-live
+tribe-theme-parent-genesis tribe-theme-child-stanhopenj
+
+classes for /events/month
+
+admin-bar
+archive
+events-archive
+events-gridview
+logged-in
+no-customize-support
+page-template-page-php
+post-type-archive
+post-type-archive-tribe_events
+sidebar-content
+singular
+tribe-events-style-full
+tribe-events-style-theme
+tribe-events-uses-geolocation
+tribe-filter-live
+tribe-theme-parent-genesis tribe-theme-child-stanhopenj
+
+classes for /events/category/recreation
+
+admin-bar
+archive
+events-archive
+#events-category
+#events-category-recreation
+events-gridview
+logged-in
+no-customize-support
+page-template-page-php
+post-type-archive
+post-type-archive-tribe_events
+sidebar-content
+singular
+tribe-events-style-full
+tribe-events-style-theme
+tribe-events-uses-geolocation
+tribe-filter-live
+tribe-theme-parent-genesis tribe-theme-child-stanhopenj
+
+
 <div class="members-box">
 <h4>Members</h4>
 <ul class="members-list">
