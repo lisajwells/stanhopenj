@@ -143,6 +143,7 @@ add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 
 //* Remove breadcrumb from /events or /events/month
 add_action( 'genesis_before', 'b3m_remove_genesis_breadcrumb' );
+
 function sp_body_class( $classes ) {
 
 		$classes[] = 'custom-class';
@@ -166,8 +167,8 @@ function b3m_remove_genesis_breadcrumb() {
 		add_action( 'genesis_after_header', 'add_breadcrumb_replace' );
 		add_filter( 'body_class', 'sp_body_class' );
 	}
-
 }
+
 
 //* Add custom body class to the head
 // add_filter( 'body_class', 'sp_body_class' );
