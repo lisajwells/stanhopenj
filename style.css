@@ -1161,9 +1161,9 @@ img.alignright,
 }
 
 #tribe-events-adv-list-widget-2 .type-tribe_events {
-  display:inline-block;
- width: 31%;
-margin-right: 3%;
+  /*display:inline-block;*/
+  width: 31.2%;
+  margin-right: 3%;
   float: left;
   border:none;
 }
@@ -1232,8 +1232,11 @@ margin-right: 3%;
   margin: auto;
 }
 
+.tribe-events-widget-link {
+    clear: both;
+}
+
 #homepage-to-events-btn {
-  clear: both;
   width: auto;
 }
 
