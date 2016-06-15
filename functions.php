@@ -142,13 +142,34 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 
 //* Remove breadcrumb from /events or /events/month
-// function b3m_remove_genesis_breadcrumb() {
-//   if ( is_post_type_archive( 'tribe_events' ) ) {
-//     echo 'i am';
-    // remove_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
-//   }
-// }
-// add_action( 'genesis_after_header', 'b3m_remove_genesis_breadcrumb' );
+add_action( 'genesis_before', 'b3m_remove_genesis_breadcrumb' );
+function b3m_remove_genesis_breadcrumb() {
+
+	global $wp;
+	// $current_url = home_url(add_query_arg(array(),$wp->request));
+	$url_part = add_query_arg(array(),$wp->request);
+	// echo $url_part;
+
+	if ( $url_part == 'events' ) {
+		echo 'this is events';
+		remove_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
+	}
+
+}
+
+//* Add custom body class to the head
+add_filter( 'body_class', 'sp_body_class' );
+function sp_body_class( $classes ) {
+
+	global $wp;
+	$url_part = add_query_arg(array(),$wp->request);
+
+	if ( $url_part == 'events' ) {
+		$classes[] = 'custom-class';
+		return $classes;
+	}
+
+}
 
 //* Add support for custom background
 add_theme_support( 'custom-background' );
