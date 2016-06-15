@@ -1025,17 +1025,12 @@ img.alignright,
 
 /* Accordion Styles */
 
-.accordion {
-    /*margin-bottom: 20px;*/
-}
-
 .accordion-title {
     color: #fff;
     cursor: pointer;
     font-family: 'Lora', serif;
     font-size: 18px;
     font-weight: 400;
-    /*height: 55px; let it be from padding for 2-liner */
     margin: 0 0 12px 0;
     padding: 19px 10px;
     text-align: center;
@@ -1055,6 +1050,9 @@ img.alignright,
   border-bottom:none;
 }
 
+.accordion-content a:hover {
+  color: #2A6284;
+}
 #accordion-1 .accordion-content ul > li {
     margin-bottom: 8px;
     padding-bottom: 0;
@@ -1847,7 +1845,7 @@ border-right: 1px solid #2A6284;
 }
 
 #footer-contact-btn:hover {
-  background-color: #30306B;
+  background-color: #1b154b;
   font-size: 20px;
   text-transform: none;
 }

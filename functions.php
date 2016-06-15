@@ -174,7 +174,7 @@ add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu'
 // Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright] &middot; Some words here &middot; <a href="http://curioelectro.com/">Web Design and Development by&nbsp;Curio&nbsp;Electro</a>';
+	$creds = '[footer_copyright] &middot; All rights reserved. &middot; <a href="http://curioelectro.com/">Web Design and Development by&nbsp;Curio&nbsp;Electro</a>';
 	return $creds;
 }
 
