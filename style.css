@@ -711,8 +711,12 @@ th:first-child {
 	float: right;
   padding: 0;
   width: 68%;
-  margin-top: -8px;
+  /*margin-top: -8px;*/
   max-width: 880px;
+}
+
+.content .entry-title {
+  margin-top: -8px;
 }
 
 .content-sidebar .content,
