@@ -443,6 +443,7 @@
     max-width: none;
   }
 
+  /* Home Page */
   .title-area {
       left: 0;
       padding: 10px 40px;
@@ -485,6 +486,8 @@
   .upcoming-events {
       margin-top: 20px;
   }
+
+  /* end Home Page */
 
   .after-entry,
   .archive-description,

@@ -1208,7 +1208,7 @@ img.alignright,
   font-weight: 400;
 }
 
-.tribe-events-event-image {
+.home .tribe-events-event-image {
   display: block;
   width: 100%;
   position: relative;
@@ -1221,7 +1221,7 @@ img.alignright,
 
 }
 
-.tribe-events-event-image img {
+.home .tribe-events-event-image img {
   position: absolute;
   display: block;
   max-width: 100%;
@@ -1233,7 +1233,7 @@ img.alignright,
   margin: auto;
 }
 
-.tribe-events-widget-link {
+.home .tribe-events-widget-link {
     clear: both;
 }
 
