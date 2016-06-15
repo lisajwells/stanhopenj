@@ -160,7 +160,7 @@ function b3m_remove_genesis_breadcrumb() {
 	$url_part = add_query_arg(array(),$wp->request);
 	// echo $url_part;
 
-	if ( $url_part == 'events' ) {
+	if ( $url_part == 'events' || $url_part == 'events/month' ) {
 		// echo 'this is events';
 		remove_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 		add_action( 'genesis_after_header', 'add_breadcrumb_replace' );

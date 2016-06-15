@@ -844,7 +844,8 @@ th:first-child {
 /* ## Genesis
 --------------------------------------------- */
 
-.breadcrumb, .breadcrumb-replace {
+.breadcrumb,
+.breadcrumb-replace {
   color: #2A6284;
   font-size: 1.4rem;
   font-size: 14px;
