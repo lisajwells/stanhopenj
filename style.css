@@ -59,17 +59,13 @@ font-family: 'Lora', serif;
 - Plugins
   - Text Resizer
 	- Genesis eNews Extended
-	- Jetpack
+  - Jetpack
+	- Events
 - Skip Links
 - Site Header
 	- Title Area
 	- Widget Area
 - Site Navigation <<< all Navigation is in style_navigation.css
-	- Accessible Menu
-	- Site Header Navigation
-	- After Header Navigation
-  - Sidebar Navigation
-	- Footer Navigation
 - Content Area
 	- Entries
 	- Entry Meta
@@ -1311,9 +1307,15 @@ img.alignright,
 --------------------------------------------- */
 
 #wpstats {
-	display: none;
+  display: none;
 }
 
+/* ## Events Calendar
+--------------------------------------------- */
+
+.tribe-events-list .tribe-events-event-image img {
+    margin: 8px 0 0 0;
+}
 
 /* # Skip Links
 ---------------------------------------------------------------------------------------------------- */
