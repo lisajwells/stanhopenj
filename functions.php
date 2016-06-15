@@ -141,6 +141,15 @@ add_filter( 'visual-form-builder-css', '__return_false' );
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 
+//* Remove breadcrumb from /events or /events/month
+// function b3m_remove_genesis_breadcrumb() {
+//   if ( is_post_type_archive( 'tribe_events' ) ) {
+//     echo 'i am';
+    // remove_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
+//   }
+// }
+// add_action( 'genesis_after_header', 'b3m_remove_genesis_breadcrumb' );
+
 //* Add support for custom background
 add_theme_support( 'custom-background' );
 
