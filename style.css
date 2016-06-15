@@ -260,8 +260,12 @@ blockquote::before {
 	position: relative;
 	top: -10px;
 }
-
-
+.clearIt {
+	clear:both;
+	}
+.round {
+	border-radius:16px;
+	}
 /* ## Headings
 --------------------------------------------- */
 
@@ -274,7 +278,7 @@ h6 {
 	font-family: 'Lora', serif;
 	font-weight: 700;
 	line-height: 1.2;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
 }
 
 h1 {
@@ -286,13 +290,13 @@ h1 {
 }
 
 h2 {
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 32px;
+	font-size: 3.2rem;
 }
 
 h3 {
-	font-size: 24px;
-	font-size: 2.4rem;
+	font-size: 22px;
+	font-size: 2.2rem;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -576,6 +580,12 @@ input[type="search"]::-webkit-search-results-button {
 .entry-content ul {
 	margin-left:0px !important;
 	}
+/* ## FAQs
+--------------------------------------------- */
+.page-id-42 h2 {
+	padding-top:40px;
+	}
+
 
 /* ## Tables
 --------------------------------------------- */
@@ -747,7 +757,11 @@ th:first-child {
 .content-sidebar-sidebar .sidebar-secondary {
 	float: right;
 }
-
+.page-id-154  .content,
+.page-id-156  .content
+ 	{
+	text-align:center;
+	}
 /* ## Column Classes
 --------------------------------------------- */
 /* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
@@ -765,6 +779,7 @@ th:first-child {
 .two-thirds {
 	float: left;
 	margin-left: 2.564102564102564%;
+	margin-bottom:40px;
 }
 
 .one-half,
@@ -1526,7 +1541,6 @@ margin-right: 3%;
 .entry-content ol,
 .entry-content ul {
 	/*margin-bottom: 28px;*/
-	/*margin-left: 40px;*/
 }
 
 .entry-content ol > li {
@@ -1535,6 +1549,9 @@ margin-right: 3%;
 
 .entry-content ul > li {
 	list-style-type: disc;
+}
+.entry-content.members-list  ul > li {
+	margin-left: 0px;
 }
 
 .entry-content ol ol,
