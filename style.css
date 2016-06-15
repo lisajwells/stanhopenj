@@ -1824,7 +1824,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30306b', end
 }
 
 #genesis-footer-widgets .footer-widgets-1 {
-border-right: 1px solid #2A6284;
+    border-right: 1px solid #2A6284;
     padding-right: 5%;
     width: 25%;
   }
@@ -1886,4 +1886,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30306b', end
 .site-footer a {
   color: #fff;
   border-bottom:none;
+}
+
+.site-footer a:hover {
+  color: #8dbbc9;
 }
