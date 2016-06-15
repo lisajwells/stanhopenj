@@ -143,6 +143,16 @@ add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 
 //* Remove breadcrumb from /events or /events/month
 add_action( 'genesis_before', 'b3m_remove_genesis_breadcrumb' );
+function sp_body_class( $classes ) {
+
+		$classes[] = 'custom-class';
+		return $classes;
+}
+
+function add_breadcrumb_replace() {
+	echo '<div class="breadcrumb-replace"></div>';
+}
+
 function b3m_remove_genesis_breadcrumb() {
 
 	global $wp;
@@ -151,25 +161,27 @@ function b3m_remove_genesis_breadcrumb() {
 	// echo $url_part;
 
 	if ( $url_part == 'events' ) {
-		echo 'this is events';
+		// echo 'this is events';
 		remove_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
+		add_action( 'genesis_after_header', 'add_breadcrumb_replace' );
+		add_filter( 'body_class', 'sp_body_class' );
 	}
 
 }
 
 //* Add custom body class to the head
-add_filter( 'body_class', 'sp_body_class' );
-function sp_body_class( $classes ) {
+// add_filter( 'body_class', 'sp_body_class' );
+// function sp_body_class( $classes ) {
 
-	global $wp;
-	$url_part = add_query_arg(array(),$wp->request);
+// 	global $wp;
+// 	$url_part = add_query_arg(array(),$wp->request);
 
-	if ( $url_part == 'events' ) {
-		$classes[] = 'custom-class';
-		return $classes;
-	}
+// 	if ( $url_part == 'events' ) {
+// 		$classes[] = 'custom-class';
+// 		return $classes;
+// 	}
 
-}
+// }
 
 //* Add support for custom background
 add_theme_support( 'custom-background' );
