@@ -440,6 +440,7 @@
 
   .site-header > .wrap {
     padding: 0;
+    max-width: none;
   }
 
   .title-area {
@@ -458,6 +459,7 @@
   .search-form input {
     padding: 6px 12px 6px 32px;
     height: 30px;
+    margin: 0;
   }
 
   .search-form:before {
@@ -478,7 +480,15 @@
     bottom: -155px;
   }
   .home .site-header .widget-area {
-    bottom: -215px;
+    bottom: -203px;
+    background: #2A6284;
+    width: 100%;
+    /*padding: 0 14em;*/
+  }
+
+  section#search-3 {
+    margin: 0 auto;
+    max-width: 340px;
   }
 
   .upcoming-events {
