@@ -467,15 +467,6 @@
     top: 12px;
   }
 
-  /*.site-header .widget-area {
-    bottom: -105px;
-    margin: 0 auto;
-    position: relative;
-    right: 0;
-    width: 262px;
-    float: none;
-  }*/
-
   .site-header .widget-area {
     bottom: -155px;
   }
@@ -483,7 +474,7 @@
     bottom: -203px;
     background: #2A6284;
     width: 100%;
-    /*padding: 0 14em;*/
+    padding: 0 5%;
   }
 
   section#search-3 {
