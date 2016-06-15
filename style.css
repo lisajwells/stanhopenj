@@ -1313,8 +1313,21 @@ img.alignright,
 /* ## Events Calendar
 --------------------------------------------- */
 
+/* thumbnail tooltips */
+.tribe-events-tooltip .tribe-events-event-thumb {
+    padding: .85em 1em .85em 0;
+}
+
 .tribe-events-list .tribe-events-event-image img {
     margin: 8px 0 0 0;
+}
+
+.tribe-events-tooltip .tribe-event-description p {
+  margin-top: .5em;
+}
+
+.tribe-events-tooltip .tribe-event-description p .button {
+  display: none;
 }
 
 /* # Skip Links
