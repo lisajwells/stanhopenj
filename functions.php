@@ -141,14 +141,8 @@ add_filter( 'visual-form-builder-css', '__return_false' );
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 
-//* Remove breadcrumb from /events or /events/month
+// Remove breadcrumb from /events or /events/month
 add_action( 'genesis_before', 'stanhopenj_remove_genesis_breadcrumb' );
-
-function sp_body_class( $classes ) {
-
-		$classes[] = 'custom-class';
-		return $classes;
-}
 
 function add_breadcrumb_replace() {
 	echo '<div class="breadcrumb-replace"></div>';
@@ -156,32 +150,22 @@ function add_breadcrumb_replace() {
 
 function stanhopenj_remove_genesis_breadcrumb() {
 
-	global $wp;
-	// $current_url = home_url(add_query_arg(array(),$wp->request));
-	$url_part = add_query_arg(array(),$wp->request);
-	// echo $url_part;
-
-	if ( $url_part == 'events' || $url_part == 'events/month' ) {
+	if ( tribe_is_month() && !is_tax() ) {
 		remove_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 		add_action( 'genesis_after_header', 'add_breadcrumb_replace' );
-		add_filter( 'body_class', 'sp_body_class' ); //this doesn't work
+		//add_filter( 'body_class', 'sp_body_class' ); //this doesn't work
 	}
 }
 
+add_filter( 'body_class','my_body_classes' );
+function my_body_classes( $classes ) {
 
-//* Add custom body class to the head
-// add_filter( 'body_class', 'sp_body_class' );
-// function sp_body_class( $classes ) {
+    if ( tribe_is_month() && !is_tax() ) {
+        $classes[] = 'events-month';
+    }
 
-// 	global $wp;
-// 	$url_part = add_query_arg(array(),$wp->request);
-
-// 	if ( $url_part == 'events' ) {
-// 		$classes[] = 'custom-class';
-// 		return $classes;
-// 	}
-
-// }
+    return $classes;
+}
 
 //* Add support for custom background
 add_theme_support( 'custom-background' );
