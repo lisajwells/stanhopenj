@@ -142,7 +142,7 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 
 //* Remove breadcrumb from /events or /events/month
-add_action( 'genesis_before', 'b3m_remove_genesis_breadcrumb' );
+add_action( 'genesis_before', 'stanhopenj_remove_genesis_breadcrumb' );
 
 function sp_body_class( $classes ) {
 
@@ -154,7 +154,7 @@ function add_breadcrumb_replace() {
 	echo '<div class="breadcrumb-replace"></div>';
 }
 
-function b3m_remove_genesis_breadcrumb() {
+function stanhopenj_remove_genesis_breadcrumb() {
 
 	global $wp;
 	// $current_url = home_url(add_query_arg(array(),$wp->request));
@@ -162,10 +162,9 @@ function b3m_remove_genesis_breadcrumb() {
 	// echo $url_part;
 
 	if ( $url_part == 'events' || $url_part == 'events/month' ) {
-		// echo 'this is events';
 		remove_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 		add_action( 'genesis_after_header', 'add_breadcrumb_replace' );
-		add_filter( 'body_class', 'sp_body_class' );
+		add_filter( 'body_class', 'sp_body_class' ); //this doesn't work
 	}
 }
 
