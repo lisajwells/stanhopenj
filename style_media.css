@@ -80,6 +80,11 @@
     max-width: 1140px;
   }
 
+  .breadcrumb,
+  .breadcrumb-replace {
+    max-width: 1140px;
+  }
+
   .content-sidebar-sidebar .content-sidebar-wrap,
   .sidebar-content-sidebar .content-sidebar-wrap,
   .sidebar-sidebar-content .content-sidebar-wrap {
@@ -108,6 +113,11 @@
 
   .site-inner,
   .wrap {
+    max-width: 960px;
+  }
+
+  .breadcrumb,
+  .breadcrumb-replace {
     max-width: 960px;
   }
 
@@ -167,6 +177,11 @@
 
   .site-inner,
   .wrap {
+    max-width: 800px;
+  }
+
+  .breadcrumb,
+  .breadcrumb-replace {
     max-width: 800px;
   }
 
@@ -431,6 +446,12 @@
 
   .site-inner {
     padding: 5% 5% 0;
+  }
+
+  .breadcrumb,
+  .breadcrumb-replace {
+    padding: 0 5%;
+    max-width: 1140px;
   }
 
   .wrap {

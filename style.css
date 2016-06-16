@@ -853,7 +853,8 @@ th:first-child {
   color: #2A6284;
   font-size: 1.4rem;
   font-size: 14px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1280px;
   padding: 0;
 }
 
