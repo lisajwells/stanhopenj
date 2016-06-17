@@ -107,7 +107,12 @@ function stanhopenj_header_markup_open() {
 	if ( is_front_page() ) {
 
 		genesis_markup( array(
-			'html5'   => '<div class="site-header-border"></div><header %s><div class="home-header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png"></div>',
+			'html5'   => '<div class="site-header-border"></div>
+						<header %s>
+						<div class="home-header-ghost">
+							<img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png">
+						</div>
+						<img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png">',
 			'xhtml'   => '<div id="header">',
 			'context' => 'site-header',
 		) );
@@ -115,7 +120,13 @@ function stanhopenj_header_markup_open() {
 	} else {
 
 		genesis_markup( array(
-			'html5'   => '<div class="site-header-border"></div><header %s><div class="page-header-ghost"><img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png"></div>',
+			'html5'   => '<div class="site-header-border"></div>
+						<header %s>
+						<div class="page-header-ghost">
+							<img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png">
+						</div>
+						<img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png">',
+
 			'xhtml'   => '<div id="header">',
 			'context' => 'site-header',
 		) );
