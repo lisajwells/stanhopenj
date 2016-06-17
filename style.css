@@ -1408,6 +1408,14 @@ img.alignright,
     z-index: 80;
 }
 
+.header-logo a {
+    border-bottom: none;
+}
+
+.header-logo img {
+      margin: 0 auto;
+}
+
 .widget_search {
   color: #aaa;
   position: relative;
