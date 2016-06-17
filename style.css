@@ -573,10 +573,7 @@ input[type="search"]::-webkit-search-results-button {
 .vfb-fieldset {
 	border:0px #fff solid;
 }
-.entry-content ol,
-.entry-content ul {
-	margin-left:0px !important;
-	}
+
 /* ## FAQs
 --------------------------------------------- */
 .page-id-42 h2 {
@@ -1576,23 +1573,21 @@ img.alignright,
 
 .entry-content ol,
 .entry-content ul {
-	/*margin-bottom: 28px;*/
+  margin-bottom: 28px;
+  margin-left: 40px;
 }
 
 .entry-content ol > li {
-	list-style-type: decimal;
+  list-style-type: decimal;
 }
 
 .entry-content ul > li {
-	list-style-type: disc;
-}
-.entry-content.members-list  ul > li {
-	margin-left: 0px;
+  list-style-type: disc;
 }
 
 .entry-content ol ol,
 .entry-content ul ul {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .entry-content code {
@@ -1787,6 +1782,12 @@ p.entry-meta {
 
 .members-box ul li {
   list-style-type: none;
+}
+
+.members-box ol,
+.members-box ul {
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 /* # Sidebars
