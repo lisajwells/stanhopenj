@@ -223,14 +223,6 @@
     font-size: 3.6rem;
   }
 
-  .site-header .widget-area {
-    bottom: -162px;
-    margin: 0 auto;
-    position: relative;
-    right: 0;
-    width: 262px;
-    float: none;
-  }
 
   .breadcrumb {
     margin-top: 73px;
@@ -238,6 +230,11 @@
 
   .title-area {
     width: 100%;
+  }
+
+  .site-header .widget-area {
+    width: 300px;
+    right: 40px;
   }
 
   .site-header .search-form {
@@ -426,9 +423,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .home .site-header .widget-area {
-    bottom: -162px;
-  }
 
 }
 
@@ -478,6 +472,11 @@
       z-index: 99;
   }
 
+  .header-logo {
+    left: 5%;
+    width: 250px;
+  }
+
   .search-form input {
     padding: 6px 12px 6px 32px;
     height: 30px;
@@ -490,13 +489,18 @@
   }
 
   .site-header .widget-area {
-    bottom: -155px;
-  }
-  .home .site-header .widget-area {
-    bottom: -203px;
     background: #2A6284;
-    width: 100%;
+    bottom: -145px;
+    margin: 0 auto;
     padding: 0 5%;
+    position: relative;
+    right: 0;
+    width: 100%;
+    float: none;
+  }
+
+  .home .site-header .widget-area {
+    /*bottom: -155px;*/
   }
 
   section#search-3 {

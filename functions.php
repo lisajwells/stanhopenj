@@ -112,7 +112,7 @@ function stanhopenj_header_markup_open() {
 						<div class="home-header-ghost">
 							<img src="'. get_stylesheet_directory_uri() .'/images/empty-290.png">
 						</div>
-						<img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png">',
+						<div class="header-logo"><img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png"></div>',
 			'xhtml'   => '<div id="header">',
 			'context' => 'site-header',
 		) );
@@ -125,7 +125,7 @@ function stanhopenj_header_markup_open() {
 						<div class="page-header-ghost">
 							<img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png">
 						</div>
-						<img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png">',
+						<div class="header-logo"><img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png"></div>',
 
 			'xhtml'   => '<div id="header">',
 			'context' => 'site-header',

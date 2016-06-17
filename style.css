@@ -1399,6 +1399,17 @@ img.alignright,
     z-index: 99;
 }
 
+.header-logo {
+    left: 10%;
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 99;
+}
+
 .widget_search {
   color: #aaa;
   position: relative;
