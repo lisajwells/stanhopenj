@@ -1397,14 +1397,15 @@ img.alignright,
 }
 
 .header-logo {
-    left: 10%;
-    position: absolute;
-    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 99;
+    z-index: 80;
 }
 
 .widget_search {
