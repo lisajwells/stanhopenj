@@ -125,8 +125,7 @@ function stanhopenj_header_markup_open() {
 						<div class="page-header-ghost">
 							<img src="'. get_stylesheet_directory_uri() .'/images/empty-190.png">
 						</div>
-						<a href="'.home_url().'"><div class="header-logo"><img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png"></div></a>',
-
+						<div class="header-logo"><a href="'.home_url().'"><img src="'. get_stylesheet_directory_uri() .'/images/Borough-of-Stanhope.png"></a></div>',
 			'xhtml'   => '<div id="header">',
 			'context' => 'site-header',
 		) );
