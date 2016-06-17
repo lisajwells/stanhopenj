@@ -1412,10 +1412,6 @@ img.alignright,
     border-bottom: none;
 }
 
-.header-logo img {
-      margin: 0 auto;
-}
-
 .widget_search {
   color: #aaa;
   position: relative;
