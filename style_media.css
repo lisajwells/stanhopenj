@@ -573,10 +573,25 @@
     margin-bottom: 28px;
   }
 
-
-
 }
 
+@media only screen and (max-width: 700px) {
 
+  .members-box {
+    font-size: 14px;
+    font-size: 1.4rem;
+    float: none;
+    margin: 6px 0 40px 0;
+    max-width: none;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .members-box h4 {
+    font-size: 23px;
+    font-size: 2.3rem;
+  }
+
+}
 
 
