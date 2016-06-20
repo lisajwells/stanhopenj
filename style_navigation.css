@@ -29,12 +29,16 @@
 
 .nav-primary {
   background-color: #fff;
+  border-bottom:1px solid #2A6284;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 
 #ubermenu-main-2-primary {
   z-index: 101;
+  text-align:right;
 }
-
 .tees {
     background-color: #1b154b;
     border: 2px solid #2A6284;
@@ -42,7 +46,7 @@
     font-family: 'Lora', serif;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 0;
+    margin: 0 -7px 0 0;
     padding: 5px 4px 2px 5px;
     position: relative;
     text-align: center;
@@ -124,7 +128,7 @@ a.selected {
 }
 
 #nav_menu-2 { /* about stanhope */
-  background-color: #1E5935;
+  background-color: #2d493b;
 }
 #nav_menu-3 { /* resources */
   background-color: #2A6284;

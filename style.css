@@ -14,7 +14,7 @@
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*
-darkgreen: #1E5935
+darkgreen: #2d493b;
 steelblue: #2A6284;
 darkblue : #30306A;
 midnightblue: #1b154b;
@@ -295,7 +295,9 @@ h3 {
 	font-size: 2.2rem;
 	font-family: 'Lato', sans-serif;
 }
-
+.page-id-7 h3 {
+	font-family: 'Lora', serif;
+	}
 h4 {
 	font-size: 20px;
 	font-size: 2rem;
@@ -319,7 +321,7 @@ h6 {
 --------------------------------------------- */
 
 /*
-darkgreen: #1E5935
+darkgreen: #2d493b
 steelblue: #2A6284;
 darkblue : #30306A;
 midnightblue: #1b154b;
@@ -328,7 +330,7 @@ lightblue: #8dbbc9;
 */
 
 .bkgd-pine {
-    background-color: #1E5935;
+    background-color: #2d493b;
 }
 .bkgd-sky {
     background-color: #2A6284;
@@ -348,8 +350,7 @@ lightblue: #8dbbc9;
   font-weight: 700;
 }
 .center {
-  margin:auto;
-  display:block;
+  text-align:center;
 	}
 
 /* ## Objects
@@ -576,8 +577,11 @@ input[type="search"]::-webkit-search-results-button {
 
 /* ## FAQs
 --------------------------------------------- */
-.page-id-42 h2 {
-	padding-top:40px;
+.page-id-42 h2,
+.page-id-901 h2,
+.top
+ {
+	padding-top:20px;
 	}
 
 
@@ -933,7 +937,7 @@ th:first-child {
 
 .entry-title a,
 .sidebar .widget-title a {
-	color: #1b154b;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -1053,12 +1057,17 @@ img.alignright,
 .accordion-content a {
   border-bottom:none;
 }
-
+.accordion-content a:after {
+  content: "\f345";
+  font-family: 'dashicons';
+  display: inline-block;
+  vertical-align: middle;
+}
 .accordion-content a:hover {
   color: #2A6284;
 }
 #accordion-1 .accordion-content ul > li {
-    margin-bottom: 8px;
+    margin-bottom: 18px;
     padding-bottom: 0;
     line-height: 1.3;
 }
@@ -1068,10 +1077,10 @@ img.alignright,
 }
 
 #accordion-1 .accordion-content .acc-list-hed {
-  font-weight: 700;
-  margin: 16px 0 3px;
+  font-weight:700;
+  margin: 16px 0 10px;
   font-family: 'Lora', serif;
-  font-size:20px;
+  font-size:22px;
 }
 #accordion-1 .accordion-content .acc-list-hed:first-child {
   margin-top: 0;
@@ -1137,7 +1146,18 @@ img.alignright,
   font-size: 20px;
   font-size: 2rem;
 }
-
+/* ## Events Single Page and Archive
+--------------------------------------------- */
+.tribe-events-event-image img {
+    height: auto;
+    float: left !important;
+    max-width: 300px !important;
+    padding: 20px;
+    margin-bottom:40px;
+}
+#tribe-events-content a {
+    border-bottom:none;
+	}
 /* ## Events Front Page
 --------------------------------------------- */
 
@@ -1229,6 +1249,7 @@ img.alignright,
   top: 0;
   bottom: 0;
   margin: auto;
+  padding:0;
 }
 
 .home .tribe-events-widget-link {
@@ -1238,6 +1259,8 @@ img.alignright,
 #homepage-to-events-btn {
   width: auto;
 }
+
+
 
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
@@ -1376,6 +1399,7 @@ img.alignright,
 
 .site-header-border {
     border-top: 16px solid #2A6284;
+    margin-top:60px;
     position: relative;
     z-index: 100;
 }
@@ -1406,6 +1430,9 @@ img.alignright,
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     z-index: 80;
+}
+.header-logo img {
+max-width:380px;
 }
 
 .header-logo a {
@@ -1534,7 +1561,7 @@ img.alignright,
     text-align: right;
     width: 400px;
     position: absolute;
-    right: 0;
+    right: 40px;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -1579,7 +1606,8 @@ img.alignright,
 .entry-content ol,
 .entry-content ul {
   margin-bottom: 28px;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .entry-content ol > li {
@@ -1761,6 +1789,11 @@ p.entry-meta {
 .upcoming-events {
   /*padding-top:40px;*/
 }
+.frontpage-news-item {
+	width:50%;
+	float:left;
+	padding:0 20px 40px 20px;
+	}
 
 /* # Members Box
 ---------------------------------------------------------------------------------------------------- */
