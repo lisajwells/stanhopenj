@@ -1566,6 +1566,7 @@ max-width:380px;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+    z-index: 1000;
 }
 
 .alert-box {
