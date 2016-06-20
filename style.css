@@ -1058,9 +1058,10 @@ img.alignright,
   border-bottom:none;
 }
 .accordion-content a:after {
+  color: #2A6284;
   content: "\f345";
-  font-family: 'dashicons';
   display: inline-block;
+  font-family: 'dashicons';
   vertical-align: middle;
 }
 .accordion-content a:hover {
