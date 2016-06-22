@@ -368,6 +368,7 @@ video,
 img {
   display: block;
 	height: auto;
+  margin: 0 auto;
 }
 
 figure {
