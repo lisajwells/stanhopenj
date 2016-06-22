@@ -1,3 +1,8 @@
+a.ubermenu-responsive-toggle:hover,
+a.ubermenu-responsive-toggle:focus {
+  border-bottom: none;
+}
+
 /* ## Accessible Menu
 --------------------------------------------- */
 
