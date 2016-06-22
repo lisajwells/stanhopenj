@@ -1155,6 +1155,7 @@ img.alignright,
 }
 /* ## Events Single Page and Archive
 --------------------------------------------- */
+
 .tribe-events-event-image img {
     height: auto;
     float: left !important;
@@ -1162,9 +1163,15 @@ img.alignright,
     padding: 20px;
     margin-bottom:40px;
 }
+
+#tribe-events-content {
+  margin-bottom: 0 !important;
+}
+
 #tribe-events-content a {
     border-bottom:none;
 	}
+
 /* ## Events Front Page
 --------------------------------------------- */
 
