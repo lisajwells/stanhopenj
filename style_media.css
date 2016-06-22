@@ -219,7 +219,8 @@
     font-size: 36px;
     font-size: 3.6rem;
   }
-    .site-header-border {
+
+  .site-header-border {
     margin-top:50px;
   }
 
@@ -238,6 +239,10 @@
 
   .site-header .search-form {
     margin: 16px auto;
+  }
+
+  .nav-primary {
+    position: relative;
   }
 
   .search-form input {
