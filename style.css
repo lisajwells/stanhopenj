@@ -761,8 +761,10 @@ th:first-child {
 .content-sidebar-sidebar .sidebar-secondary {
 	float: right;
 }
-.page-id-154  .content,
-.page-id-156  .content
+.page-id-154 .content,
+.page-id-156 .content,
+.page-id-1069 .content,
+.page-id-1081 .content
  	{
 	text-align:center;
 	}
@@ -943,7 +945,7 @@ th:first-child {
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #c3251d;
+	color: #2A6284;
 }
 
 .widget-title {
@@ -951,6 +953,9 @@ th:first-child {
 	font-size: 1.8rem;
 	margin-bottom: 20px;
 }
+.entry-time {
+	display:none;
+	}
 
 /* ## WordPress
 --------------------------------------------- */
@@ -1571,12 +1576,13 @@ max-width:380px;
 }
 
 .alert-box {
-  background-color: #fff;
-  border: 4px solid red;
-  color: red;
+  background-color: #c40d0d;
+  border: 6px solid red;
+  color: #fff;
   margin: 40px 0 40px 0;
-  padding: 10px;
+  padding: 20px;
   font-size:20px;
+  font-weight:bold;
 }
 
 .alert-box .widget {
@@ -1585,7 +1591,7 @@ max-width:380px;
 
 .alert-box .widget-title {
   text-align: center;
-  color: red;
+  color: #fff;
 }
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
@@ -1689,7 +1695,7 @@ p.entry-meta {
 .archive-pagination a:hover,
 .archive-pagination a:focus,
 .archive-pagination .active a {
-	background-color: #c3251d;
+	background-color: #2A6284;
 	color: #fff;
 }
 
@@ -1763,11 +1769,14 @@ p.entry-meta {
 
 .frontpage-news {
   margin: 20px 0px 60px 0px;
-  padding-top:60px;
   text-align: center;
-  border-top:1px solid #000;
 }
-
+.frontpage-news h3{
+  /*margin: 20px 0px 60px 0px;
+  padding-top:60px;
+  text-align: center;*/
+  display:none;
+}
 .frontpage-news p {
   text-align: left;
 }
