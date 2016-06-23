@@ -484,9 +484,9 @@
     }
 
     .frontpage-news-item {
-    	width:100%;
-    	clear:both;
-    	padding:0px;
+      width:100%;
+      clear:both;
+      padding:0px;
     }
 
     .tribe-events-event-image img {
@@ -495,15 +495,18 @@
         padding: 0px;
     }
 
-    @media only screen and (max-width: 540px) {
-      img.size-full {
-        float: none;
-        margin: 0 auto 24px auto;
-        max-width: 250px;
-      }
+}
 
-    }
+@media only screen and (max-width: 540px) {
+
+  img.size-full {
+    float: none;
+    margin: 0 auto 24px auto;
+    max-width: 250px;
+  }
 
 }
+
+
 
 
