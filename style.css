@@ -1416,6 +1416,7 @@ img.alignright,
 
 .site-header-border {
     border-top: 16px solid #2A6284;
+    margin-top:60px;
     position: relative;
     z-index: 100;
 }

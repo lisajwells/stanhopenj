@@ -220,6 +220,10 @@
     font-size: 3.6rem;
   }
 
+  .site-header-border {
+    margin-top:0;
+  }
+
   .breadcrumb {
     margin-top: 73px;
   }
