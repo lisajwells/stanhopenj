@@ -367,7 +367,10 @@ video,
 
 img {
   display: block;
-	height: auto;
+  height: auto;
+}
+
+.entry-content img {
   margin: 0 auto;
 }
 
