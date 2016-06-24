@@ -378,10 +378,6 @@ figure {
 	margin: 0;
 }
 
-.scrolloff { /* no zoom google map */
-  pointer-events: none;
-}
-
 /* ## Gallery
 --------------------------------------------- */
 
