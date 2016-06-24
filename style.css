@@ -1454,8 +1454,9 @@ img.alignright,
             transform: translateY(-50%);
     z-index: 80;
 }
+
 .header-logo img {
-max-width:380px;
+  max-width:350px;
 }
 
 .header-logo a {
