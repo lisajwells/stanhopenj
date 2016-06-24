@@ -1174,7 +1174,11 @@ img.alignright,
 
 #tribe-events-content a {
     border-bottom:none;
-	}
+}
+
+.tribe-events-list .tribe-events-event-image img {
+    margin: 0 0 20px 0 !important;
+}
 
 /* ## Events Front Page
 --------------------------------------------- */
@@ -1362,8 +1366,8 @@ img.alignright,
 }
 
 .tribe-events-list .tribe-events-event-image img {
-    margin: 8px 0 0 0;
-}
+/*    margin: 8px 0 0 0;
+*/}
 
 .tribe-events-tooltip .tribe-event-description p {
   margin-top: .5em;
