@@ -1156,6 +1156,7 @@ img.alignright,
   font-size: 20px;
   font-size: 2rem;
 }
+
 /* ## Events Single Page and Archive
 --------------------------------------------- */
 
@@ -1163,7 +1164,7 @@ img.alignright,
     height: auto;
     float: left !important;
     max-width: 300px !important;
-    padding: 20px;
+    padding: 26px 20px 20px 0;
     margin-bottom:40px;
 }
 
