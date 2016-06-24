@@ -45,6 +45,11 @@ a.ubermenu-responsive-toggle:focus {
   z-index: 101;
   text-align:right;
 }
+
+.ubermenu-main .ubermenu-nav .ubermenu-item.ubermenu-item-level-0 > .ubermenu-target {
+    margin-bottom: 7px;
+}
+
 .tees {
     background-color: #1b154b;
     border: 2px solid #2A6284;

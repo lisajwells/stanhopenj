@@ -245,6 +245,18 @@
     position: relative;
   }
 
+  .ubermenu-main .ubermenu-nav .ubermenu-item.ubermenu-item-level-0 > .ubermenu-target {
+    margin-bottom: 0;
+  }
+
+  .ubermenu-content-block.ubermenu-custom-content.ubermenu-custom-content-padded {
+    padding-right: 0;
+  }
+
+  .tees {
+    float: right;
+  }
+
   .search-form input {
     padding: 6px 12px 6px 32px;
     height: 40px;
