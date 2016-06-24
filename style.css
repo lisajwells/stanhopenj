@@ -1845,6 +1845,10 @@ p.entry-meta {
   text-transform: uppercase;
 }
 
+ul.members-list {
+  margin-right: 0;
+}
+
 .members-box ul li {
   list-style-type: none;
 }
