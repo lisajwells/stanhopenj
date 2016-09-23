@@ -506,7 +506,10 @@
         max-width: 100% !important;
         padding: 0px;
     }
-
+	.home .type-tribe_events:nth-of-type(2), 
+.home .type-tribe_events:nth-of-type(3) {
+    display: none;
+	}
 }
 
 @media only screen and (max-width: 540px) {

@@ -73,6 +73,45 @@ function stanhopnj_search_button_text( $text ) {
 // Remove the edit link
 add_filter ( 'genesis_edit_post_link' , '__return_false' );
 
+
+
+//Remove end date on the Events Calendar
+function tribe_remove_end_time_single( $formatting_details ) {
+	$formatting_details['show_end_time'] = 0;
+	return $formatting_details;
+}
+add_filter( 'tribe_events_event_schedule_details_formatting', 'tribe_remove_end_time_single', 10, 2);
+
+function tribe_remove_end_time_tooltips( $json_array, $event, $additional ) {
+	$json_array['endTime'] = '';
+	return $json_array;
+}
+add_filter( 'tribe_events_template_data_array', 'tribe_remove_end_time_tooltips', 10, 3 );
+
+function tribe_remove_endtime_multiday ( $inner, $event ) {
+	if ( tribe_event_is_multiday( $event ) && ! tribe_event_is_all_day( $event ) ) {
+		$format                   = tribe_get_date_format( true );
+		$time_format              = get_option( 'time_format' );
+		$format2ndday             = apply_filters( 'tribe_format_second_date_in_range', $format, $event );
+		$datetime_separator       = tribe_get_option( 'dateTimeSeparator', ' @ ' );
+		$time_range_separator     = tribe_get_option( 'timeRangeSeparator', ' - ' );
+		$microformatStartFormat   = tribe_get_start_date( $event, false, 'Y-m-dTh:i' );
+		$microformatEndFormat     = tribe_get_end_date( $event, false, 'Y-m-dTh:i' );
+		$inner = '<span class="date-start dtstart">';
+		$inner .= tribe_get_start_date( $event, false, $format ) . $datetime_separator . tribe_get_start_date( $event, false, $time_format );
+		$inner .= '<span class="value-title" title="' . $microformatStartFormat . '"></span>';
+		$inner .= '</span>' . $time_range_separator;
+		$inner .= '<span class="date-end dtend">';
+		$inner .= tribe_get_end_date( $event, false, $format2ndday );
+		$inner .= '<span class="value-title" title="' . $microformatEndFormat . '"></span>';
+		$inner .= '</span>';
+	}
+	return $inner;
+}
+add_filter( 'tribe_events_event_schedule_details_inner', 'tribe_remove_endtime_multiday', 10, 3 );
+
+
+
 // Customize the post info function
 add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 function sp_post_info_filter($post_info) {
@@ -210,7 +249,7 @@ add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu'
 // Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright] &middot; All rights reserved. &middot; <a href="http://curioelectro.com/">Web Design and Development by&nbsp;Curio&nbsp;Electro</a>';
+	$creds = '[footer_copyright] &middot; All rights reserved. &middot; <a href="http://curioelectro.com/" target="_blank">Web Design and Development by&nbsp;Curio&nbsp;Electro</a>';
 	return $creds;
 }
 

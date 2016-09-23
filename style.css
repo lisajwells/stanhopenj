@@ -258,6 +258,7 @@ blockquote::before {
 }
 .clearIt {
 	clear:both;
+	padding-top:40px;
 	}
 .round {
 	border-radius:16px;
@@ -1096,6 +1097,14 @@ img.alignright,
 #accordion-1 .accordion-content .acc-list-hed:first-child {
   margin-top: 0;
 }
+a.linky:after {
+  display:none;
+}
+a.linky  {
+  border-bottom:none;
+  font-weight:500;
+}
+
 
 /**/
 
@@ -1406,7 +1415,7 @@ img.alignright,
 }
 
 .site-header {
-  background: url("images/header-waterfall.jpg") center;
+  background: url("images/header-lake.jpg") center;
   background-size: cover;
   height: 190px;
   margin-bottom: 60px;
@@ -1414,7 +1423,7 @@ img.alignright,
 }
 
 .home .site-header {
-  background: url("images/header-waterfall.jpg") center;
+  background: url("images/header-lake.jpg") center;
   background-size: cover;
   height: 290px;
   position: relative;
@@ -1611,6 +1620,10 @@ img.alignright,
   text-align: center;
   color: #fff;
 }
+section#text-6 a {
+    color: #fff;
+    border-bottom: #fff solid 2px;
+}
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 /* !!!!!!! see style_navigation.css for all navigation !!!!!! */
@@ -1790,15 +1803,13 @@ p.entry-meta {
   text-align: center;
 }
 .frontpage-news h3{
-  /*margin: 20px 0px 60px 0px;
-  padding-top:60px;
-  text-align: center;*/
-  display:none;
+  margin: 0px 0px 10px 0px;
+  padding-top:0px;
+  text-align: center;
 }
 .frontpage-news p {
   text-align: left;
 }
-
 .frontpage-news h4 {
   font-family: 'Lato', sans-serif;
   font-size: 21px;

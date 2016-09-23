@@ -31,7 +31,7 @@ add_action( 'genesis_loop', 'stanhopenj_news_loop' );
 function stanhopenj_news_loop() {
 
     echo '<div class="frontpage-news">';
-    echo '<h3>Recent News</h3>';
+    echo '<h3>Latest News</h3>';
 
     $args = array(
         'category_name' => 'news',
