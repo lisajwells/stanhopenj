@@ -132,7 +132,7 @@ function child_conditional_actions() {
 }
 
 // Add Read More Link to Excerpts
-// Front Page New excerpts are links instead of buttons
+// Front Page News excerpts are links instead of buttons
 add_filter('excerpt_more', 'get_read_more_link');
 add_filter( 'the_content_more_link', 'get_read_more_link' );
 function get_read_more_link() {

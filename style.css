@@ -1288,7 +1288,8 @@ a.linky  {
     clear: both;
 }
 
-#homepage-to-events-btn {
+#homepage-to-events-btn,
+#homepage-to-news-btn {
   width: auto;
 }
 
@@ -1833,7 +1834,7 @@ p.entry-meta {
 .frontpage-news-item {
 	width:50%;
 	float:left;
-	padding:0 20px 40px 20px;
+	padding:0 20px 10px 20px;
 	}
 
 /* # Members Box

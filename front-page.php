@@ -50,6 +50,9 @@ function stanhopenj_news_loop() {
         echo '</div>';
         endwhile;
     }
+
+    echo '<a id="homepage-to-news-btn" class="button small" href="' . get_site_url() . '/category/news">View All News Stories</a>';
+
     wp_reset_postdata();
 
         echo '</div>';
