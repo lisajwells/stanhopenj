@@ -132,10 +132,15 @@ function child_conditional_actions() {
 }
 
 // Add Read More Link to Excerpts
+// Front Page New excerpts are links instead of buttons
 add_filter('excerpt_more', 'get_read_more_link');
 add_filter( 'the_content_more_link', 'get_read_more_link' );
 function get_read_more_link() {
-   return '...</p><a class="button small" href="' . get_permalink() . '" >Read More</a>';
+	if ( is_front_page() ) {
+	   return '...</p><a class="front-page-read-more" href="' . get_permalink() . '" >Read More...</a>';
+	} else {
+	   return '...</p><a class="button small" href="' . get_permalink() . '" >Read More</a>';
+	}
 }
 
 // Add Gradient over header image for readability
