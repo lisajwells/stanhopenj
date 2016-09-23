@@ -1819,7 +1819,8 @@ p.entry-meta {
   text-transform: uppercase;
 }
 
-.frontpage-news h4:hover {
+.frontpage-news h4:hover,
+.frontpage-news h3:hover {
   color: #2A6284;
 }
 
