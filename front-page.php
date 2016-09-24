@@ -51,11 +51,11 @@ function stanhopenj_news_loop() {
         endwhile;
     }
 
-    echo '<a id="homepage-to-news-btn" class="button small" href="' . get_site_url() . '/category/news">View All News Stories</a>';
+    echo '<p id="homepage-to-news-btn"><a class="button small" href="' . get_site_url() . '/category/news">View All News Stories</a></p>';
 
     wp_reset_postdata();
 
-        echo '</div>';
+    echo '</div>';
 
 }
 

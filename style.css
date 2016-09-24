@@ -1287,9 +1287,13 @@ a.linky  {
 .home .tribe-events-widget-link {
     clear: both;
 }
+#homepage-to-news-btn {
+    clear: both;
+    text-align: center;
+}
 
 #homepage-to-events-btn,
-#homepage-to-news-btn {
+#homepage-to-news-btn a {
   width: auto;
 }
 
